@@ -5,29 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" id="meta-description"
-    content="أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه." />
+    content="أطلس ديف شركة هندسة برمجيات في الإمارات وسوريا. نبني أنظمة ERP ولوحات تحكم وتطبيقات جوال مخصصة بـ Laravel وVue.js وFlutter." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="keywords" content="AtlasDev, Laravel development, Vue.js development, Flutter development, software engineering, ERP systems, dashboards, UAE software company, Syria software company" />
+  <meta name="keywords" content="أطلس ديف, AtlasDev, تطوير Laravel, Vue.js, Flutter, أنظمة ERP, برمجة في الإمارات, شركة برمجيات الإمارات, سوريا" />
   <meta name="author" content="AtlasDev" />
+  <meta name="geo.region" content="AE" />
+  <meta name="geo.placename" content="United Arab Emirates" />
   <meta name="theme-color" content="#0F0F0F" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AtlasDev" />
-  <meta property="og:title" id="meta-og-title" content="أطلس ديف - هندسة برمجيات موثوقة" />
-  <meta property="og:description" id="meta-og-description" content="أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه." />
-  <meta property="og:url" id="meta-og-url" content="https://atlasdev.tech/default.html" />
+  <meta property="og:title" id="meta-og-title" content="أطلس ديف | تطوير Laravel وVue وFlutter في الإمارات" />
+  <meta property="og:description" id="meta-og-description" content="أطلس ديف شركة هندسة برمجيات في الإمارات وسوريا. نبني أنظمة ERP ولوحات تحكم وتطبيقات جوال مخصصة بـ Laravel وVue.js وFlutter." />
+  <meta property="og:url" id="meta-og-url" content="https://atlasdev.tech/" />
   <meta property="og:image" id="meta-og-image" content="https://atlasdev.tech/logo/logo4.png" />
-  <meta property="og:image:alt" id="meta-og-image-alt" content="AtlasDev logo" />
+  <meta property="og:image:alt" id="meta-og-image-alt" content="شعار أطلس ديف AtlasDev" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:locale" id="meta-og-locale" content="ar_AE" />
+  <meta property="og:locale:alternate" id="meta-og-locale-alt" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" id="meta-twitter-title" content="أطلس ديف - هندسة برمجيات موثوقة" />
-  <meta name="twitter:description" id="meta-twitter-description" content="أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه." />
+  <meta name="twitter:title" id="meta-twitter-title" content="أطلس ديف | تطوير Laravel وVue وFlutter في الإمارات" />
+  <meta name="twitter:description" id="meta-twitter-description" content="أطلس ديف شركة هندسة برمجيات في الإمارات وسوريا. نبني أنظمة ERP ولوحات تحكم وتطبيقات جوال مخصصة بـ Laravel وVue.js وFlutter." />
   <meta name="twitter:image" id="meta-twitter-image" content="https://atlasdev.tech/logo/logo4.png" />
-  <title>أطلس ديف - هندسة برمجيات موثوقة</title>
-  <link rel="canonical" id="canonical-link" href="https://atlasdev.tech/default.html" />
-  <link rel="alternate" id="alternate-ar" hreflang="ar" href="https://atlasdev.tech/default.html" />
-  <link rel="alternate" id="alternate-en" hreflang="en" href="https://atlasdev.tech/default.html?lang=en" />
-  <link rel="alternate" id="alternate-x-default" hreflang="x-default" href="https://atlasdev.tech/default.html" />
+  <meta name="twitter:image:alt" content="شعار أطلس ديف AtlasDev" />
+  <title>أطلس ديف | تطوير Laravel وVue وFlutter في الإمارات</title>
+  <link rel="canonical" id="canonical-link" href="https://atlasdev.tech/" />
+  <link rel="alternate" id="alternate-ar" hreflang="ar" href="https://atlasdev.tech/" />
+  <link rel="alternate" id="alternate-en" hreflang="en" href="https://atlasdev.tech/?lang=en" />
+  <link rel="alternate" id="alternate-x-default" hreflang="x-default" href="https://atlasdev.tech/" />
   <link rel="icon" type="image/png" href="logo/logo4.png" />
+  <link rel="apple-touch-icon" href="logo/logo4.png" />
   <script type="application/ld+json" id="atlasdev-schema"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -965,6 +971,15 @@
       flex-wrap: wrap;
       gap: 6px;
       align-items: center;
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+
+    .phone-ltr {
+      direction: ltr;
+      unicode-bidi: isolate;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
     }
 
     .contact-slash {
@@ -2139,9 +2154,12 @@
       text-align: right;
     }
 
-    html[dir="rtl"] .contact-item,
-    html[dir="rtl"] .contact-pair {
+    html[dir="rtl"] .contact-item {
       flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .contact-pair {
+      flex-direction: row;
     }
 
     html[dir="rtl"] .lightbox-close,
@@ -2951,14 +2969,14 @@
             </div>
             <div class="contact-item">
               <div class="contact-dot">📞</div>
-              <span class="contact-pair">
-                <a id="uaeWhatsapp"
+              <span class="contact-pair" dir="ltr">
+                <a id="uaeWhatsapp" class="phone-ltr" dir="ltr"
                   href="https://wa.me/971524859625?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA."
-                  target="_blank" rel="noreferrer">+971 52 485 9625</a>
-                <span class="contact-slash">/</span>
-                <a id="syriaWhatsapp"
+                  target="_blank" rel="noopener noreferrer">+971 52 485 9625</a>
+                <span class="contact-slash" aria-hidden="true">/</span>
+                <a id="syriaWhatsapp" class="phone-ltr" dir="ltr"
                   href="https://wa.me/963995019487?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D9%85%D9%86%20%D8%B3%D9%88%D8%B1%D9%8A%D8%A7."
-                  target="_blank" rel="noreferrer">+963 995 019 487</a>
+                  target="_blank" rel="noopener noreferrer">+963 995 019 487</a>
               </span>
             </div>
             <div class="contact-item">
@@ -3072,6 +3090,7 @@
     const metaOgDescription = document.getElementById('meta-og-description');
     const metaOgUrl = document.getElementById('meta-og-url');
     const metaOgLocale = document.getElementById('meta-og-locale');
+    const metaOgLocaleAlt = document.getElementById('meta-og-locale-alt');
     const metaTwitterTitle = document.getElementById('meta-twitter-title');
     const metaTwitterDescription = document.getElementById('meta-twitter-description');
     const schemaNode = document.getElementById('atlasdev-schema');
@@ -3081,8 +3100,8 @@
     const translations = {
       ar: {
         meta: {
-          title: 'أطلس ديف - هندسة برمجيات موثوقة',
-          description: 'أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه.'
+          title: 'أطلس ديف | تطوير Laravel وVue وFlutter في الإمارات',
+          description: 'أطلس ديف شركة هندسة برمجيات في الإمارات وسوريا. نبني أنظمة ERP ولوحات تحكم وتطبيقات جوال مخصصة بـ Laravel وVue.js وFlutter.'
         },
         nav: {
           services: 'الخدمات',
@@ -3278,8 +3297,8 @@
       },
       en: {
         meta: {
-          title: 'AtlasDev - Trusted Software Engineering',
-          description: 'AtlasDev - Trusted Software Engineering. We build custom Laravel, Vue, and Flutter solutions for businesses across the Arab world and beyond.'
+          title: 'AtlasDev | Laravel, Vue & Flutter Software Company in the UAE',
+          description: 'AtlasDev is a UAE and Syria software studio building custom ERP systems, dashboards, and mobile apps with Laravel, Vue.js, and Flutter.'
         },
         nav: {
           services: 'Services',
@@ -3642,7 +3661,7 @@
       }
     };
     function buildLocalizedPageUrl(lang) {
-      const next = new URL(`${SITE_URL}/default.html`);
+      const next = new URL(`${SITE_URL}/`);
       if (lang === 'en') next.searchParams.set('lang', 'en');
       return next.toString();
     }
@@ -3666,15 +3685,41 @@
         '@context': 'https://schema.org',
         '@graph': [
           {
-            '@type': 'Organization',
+            '@type': ['Organization', 'ProfessionalService'],
             '@id': `${SITE_URL}/#organization`,
             name: 'AtlasDev',
-            url: `${SITE_URL}/default.html`,
-            logo: `${SITE_URL}/logo/logo4.png`,
+            alternateName: 'أطلس ديف',
+            url: `${SITE_URL}/`,
+            logo: {
+              '@type': 'ImageObject',
+              url: `${SITE_URL}/logo/logo4.png`
+            },
+            image: `${SITE_URL}/logo/logo4.png`,
             email: 'info@atlasdev.tech',
-            telephone: '+971524859625',
+            telephone: ['+971524859625', '+963995019487'],
+            address: {
+              '@type': 'PostalAddress',
+              addressCountry: 'AE'
+            },
             areaServed: ['AE', 'SY', 'SA', 'QA', 'KW'],
             availableLanguage: ['ar', 'en'],
+            knowsAbout: ['Laravel', 'Vue.js', 'Flutter', 'ERP', 'MySQL', 'PostgreSQL'],
+            contactPoint: [
+              {
+                '@type': 'ContactPoint',
+                telephone: '+971-52-485-9625',
+                contactType: 'sales',
+                areaServed: 'AE',
+                availableLanguage: ['ar', 'en']
+              },
+              {
+                '@type': 'ContactPoint',
+                telephone: '+963-995-019-487',
+                contactType: 'sales',
+                areaServed: 'SY',
+                availableLanguage: ['ar', 'en']
+              }
+            ],
             sameAs: [
               'https://wa.me/971524859625'
             ]
@@ -3682,7 +3727,7 @@
           {
             '@type': 'WebSite',
             '@id': `${SITE_URL}/#website`,
-            url: `${SITE_URL}/default.html`,
+            url: `${SITE_URL}/`,
             name: 'AtlasDev',
             inLanguage,
             publisher: { '@id': `${SITE_URL}/#organization` }
@@ -3728,6 +3773,7 @@
       metaOgDescription.setAttribute('content', locale.meta.description);
       metaOgUrl.setAttribute('content', pageUrl);
       metaOgLocale.setAttribute('content', ogLocale);
+      if (metaOgLocaleAlt) metaOgLocaleAlt.setAttribute('content', lang === 'ar' ? 'en_US' : 'ar_AE');
       metaTwitterTitle.setAttribute('content', locale.meta.title);
       metaTwitterDescription.setAttribute('content', locale.meta.description);
       schemaNode.textContent = JSON.stringify(buildWebsiteSchema(lang));
