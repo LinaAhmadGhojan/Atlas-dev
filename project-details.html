@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" id="meta-description"
+    content="استعرض تفاصيل مشاريع AtlasDev في Laravel وVue وFlutter مع نبذة عن الحلول التقنية والقطاعات التي نخدمها." />
+  <meta name="robots" id="meta-robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="AtlasDev" />
+  <meta name="theme-color" content="#0F0F0F" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AtlasDev" />
+  <meta property="og:title" id="meta-og-title" content="تفاصيل المشروع | AtlasDev" />
+  <meta property="og:description" id="meta-og-description" content="استعرض تفاصيل مشاريع AtlasDev في Laravel وVue وFlutter مع نبذة عن الحلول التقنية والقطاعات التي نخدمها." />
+  <meta property="og:url" id="meta-og-url" content="https://atlasdev.tech/project-details.html" />
+  <meta property="og:image" id="meta-og-image" content="https://atlasdev.tech/logo/logo4.png" />
+  <meta property="og:image:alt" id="meta-og-image-alt" content="AtlasDev project preview" />
+  <meta property="og:locale" id="meta-og-locale" content="ar_AE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" id="meta-twitter-title" content="تفاصيل المشروع | AtlasDev" />
+  <meta name="twitter:description" id="meta-twitter-description" content="استعرض تفاصيل مشاريع AtlasDev في Laravel وVue وFlutter مع نبذة عن الحلول التقنية والقطاعات التي نخدمها." />
+  <meta name="twitter:image" id="meta-twitter-image" content="https://atlasdev.tech/logo/logo4.png" />
+  <title>تفاصيل المشروع | AtlasDev</title>
+  <link rel="canonical" id="canonical-link" href="https://atlasdev.tech/project-details.html" />
+  <link rel="alternate" id="alternate-ar" hreflang="ar" href="https://atlasdev.tech/project-details.html" />
+  <link rel="alternate" id="alternate-en" hreflang="en" href="https://atlasdev.tech/project-details.html?lang=en" />
+  <link rel="alternate" id="alternate-x-default" hreflang="x-default" href="https://atlasdev.tech/default.html" />
+  <script type="application/ld+json" id="project-schema"></script>
+  <style>
+    :root {
+      --bg: #eaefeb;
+      --surface: #ffffff;
+      --surface-2: #f4f6f4;
+      --text: #0f0f0f;
+      --muted: #6f736d;
+      --accent: #fed000;
+      --border: rgba(15, 15, 15, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 24px;
+      background: rgba(255, 255, 255, .78);
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .title-wrap {
+      flex: 1;
+    }
+
+    .title-wrap h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .title-wrap p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all .2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .btn-back {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-lang {
+      background: var(--accent);
+      color: #0f1115;
+      font-weight: 700;
+    }
+
+    .btn-wa {
+      background: #25d366;
+      color: #fff;
+    }
+
+    .main-content {
+      flex: 1;
+      overflow: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hero-section {
+      max-width: 1100px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .slider-wrapper {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(52, 211, 165, 0.1), rgba(254, 208, 0, 0.08));
+      border: 1px solid var(--border);
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slider-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      padding: 20px;
+      background: var(--surface);
+    }
+
+    .slider-controls {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: all .2s;
+    }
+
+    .slider-btn:hover {
+      background: var(--surface-2);
+      border-color: var(--accent);
+    }
+
+    .slider-counter {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      min-width: 60px;
+      text-align: center;
+    }
+
+    .info-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(254, 208, 0, 0.4);
+      background: rgba(254, 208, 0, 0.1);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      width: fit-content;
+    }
+
+    .desc {
+      font-size: 16px;
+      color: #1f2329;
+      line-height: 1.8;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: rgba(254, 208, 0, 0.12);
+      color: #f4ce2a;
+      border: 1px solid rgba(254, 208, 0, 0.28);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero-section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .main-content {
+        padding: 24px 16px;
+      }
+
+      .slider-wrapper {
+        aspect-ratio: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .actions {
+        width: 100%;
+        gap: 8px;
+      }
+
+      .btn {
+        flex: 1;
+        font-size: 13px;
+        padding: 9px 12px;
+      }
+
+      .title-wrap h1 {
+        font-size: 24px;
+      }
+
+      .hero-section {
+        gap: 16px;
+      }
+
+      .info-section {
+        gap: 16px;
+      }
+
+      .desc {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="title-wrap">
+      <h1 id="projectTitle">تفاصيل المشروع</h1>
+      <p id="projectType">-</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-back" href="default.html#projects" id="backBtn">← العودة</a>
+      <button class="btn btn-lang" id="langBtn" type="button">EN</button>
+      <a class="btn btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path fill="currentColor"
+            d="M16.03 5.3c-5.9 0-10.68 4.72-10.68 10.55 0 1.86.49 3.67 1.42 5.28L5.3 26.7l5.74-1.5a10.77 10.77 0 0 0 4.98 1.22h.01c5.89 0 10.67-4.73 10.67-10.56 0-2.82-1.1-5.46-3.12-7.45a10.75 10.75 0 0 0-7.55-3.1zm0 19.33h-.01a8.9 8.9 0 0 1-4.53-1.24l-.33-.19-3.4.89.91-3.31-.21-.34a8.73 8.73 0 0 1-1.35-4.6c0-4.83 3.98-8.77 8.91-8.77 2.38 0 4.61.92 6.29 2.58a8.67 8.67 0 0 1 2.61 6.18c0 4.83-3.99 8.8-8.89 8.8zm4.88-6.61c-.27-.13-1.61-.79-1.86-.88-.25-.09-.43-.13-.61.13-.18.26-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.13-1.13-.41-2.16-1.31-.8-.7-1.34-1.56-1.5-1.82-.16-.26-.02-.4.12-.53.12-.12.27-.31.4-.46.13-.15.18-.26.27-.44.09-.18.04-.33-.02-.46-.07-.13-.61-1.46-.84-2-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.95 2.56 1.09 2.74.13.18 1.86 2.97 4.52 4.16.63.27 1.12.43 1.51.55.63.2 1.2.17 1.65.1.5-.08 1.61-.66 1.84-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.31z" />
+        </svg>
+        <span id="waLabel">واتساب</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div id="contentContainer"></div>
+    <div id="emptyState" class="empty" style="display:none">لا يوجد مشروع مطابق.</div>
+  </div>
+
+  <script>
+    const SITE_URL = 'https://atlasdev.tech';
+    const metaDescription = document.getElementById('meta-description');
+    const metaRobots = document.getElementById('meta-robots');
+    const canonicalLink = document.getElementById('canonical-link');
+    const alternateAr = document.getElementById('alternate-ar');
+    const alternateEn = document.getElementById('alternate-en');
+    const alternateDefault = document.getElementById('alternate-x-default');
+    const metaOgTitle = document.getElementById('meta-og-title');
+    const metaOgDescription = document.getElementById('meta-og-description');
+    const metaOgUrl = document.getElementById('meta-og-url');
+    const metaOgImage = document.getElementById('meta-og-image');
+    const metaOgImageAlt = document.getElementById('meta-og-image-alt');
+    const metaOgLocale = document.getElementById('meta-og-locale');
+    const metaTwitterTitle = document.getElementById('meta-twitter-title');
+    const metaTwitterDescription = document.getElementById('meta-twitter-description');
+    const metaTwitterImage = document.getElementById('meta-twitter-image');
+    const schemaNode = document.getElementById('project-schema');
+    const translations = {
+      ar: {
+        pageTitle: 'تفاصيل المشروع | AtlasDev',
+        defaultTitle: 'تفاصيل المشروع',
+        defaultDescription: 'استعرض تفاصيل مشاريع AtlasDev في Laravel وVue وFlutter مع نبذة عن الحلول التقنية والقطاعات التي نخدمها.',
+        back: '← العودة',
+        wa: 'واتساب',
+        badge: 'شرح المشروع',
+        invalid: 'لا يوجد مشروع مطابق.',
+        langSwitch: 'EN'
+      },
+      en: {
+        pageTitle: 'Project Details | AtlasDev',
+        defaultTitle: 'Project Details',
+        defaultDescription: 'Browse AtlasDev project case studies across Laravel, Vue, and Flutter with technical summaries and product scope.',
+        back: '← Back',
+        wa: 'WhatsApp',
+        badge: 'Project Overview',
+        invalid: 'No matching project found.',
+        langSwitch: 'عربي'
+      }
+    };
+
+    const projectCatalog = {
+      tablemaster: {
+        name: { ar: 'TableMaster', en: 'TableMaster' },
+        type: { ar: 'تطبيق مطاعم', en: 'Restaurant App' },
+        details: {
+          ar: 'تطبيق متكامل لإدارة المطاعم مع حجوزات الطاولات، توجيه الطلبات للمطبخ مباشرة، نقطة بيع، تقارير يومية، وإدارة ورديات الموظفين.',
+          en: 'Restaurant management app with table reservations, live kitchen order routing, POS cashier, daily revenue reports, and staff shift management.'
+        },
+        images: ['lina-ahmad-ghojan/1-resturant/1.png', 'lina-ahmad-ghojan/1-resturant/All.png', 'lina-ahmad-ghojan/1-resturant/Scene.png', 'lina-ahmad-ghojan/1-resturant/isometric-mockups-3.png'],
+        tags: ['Flutter', 'Laravel', 'MySQL']
+      },
+      ShopNest: {
+        name: { ar: 'ShopHub', en: 'ShopHub' },
+        type: { ar: 'تجارة إلكترونية', en: 'E-Commerce' },
+        details: {
+          ar: 'منصة تجارة إلكترونية كاملة مع كتالوج منتجات وسلة شراء ودفع وتتبع الطلبات ولوحة تحكم إدارية قوية.',
+          en: 'Full e-commerce platform with product catalog, cart, checkout, payment gateway integration, order tracking, and a powerful admin dashboard.'
+        },
+        images: [
+          'lina-ahmad-ghojan/2-ecommerce/1.png',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-30-55-306_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-30-59-031_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-03-243_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-06-161_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-09-700_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-17-241_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-21-582_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-40-668_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-31-46-635_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-03-985_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-07-289_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-13-372_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-17-365_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-44-955_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-48-856_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-32-54-061_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-33-01-043_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-33-05-111_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-33-14-507_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-33-35-295_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-00-991_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-12-092_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-17-012_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-24-495_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-30-270_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-44-285_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-48-664_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-34-52-187_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-35-02-949_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-35-15-682_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-35-23-720_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-35-30-803_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-35-36-137_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-35-46-857_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-36-21-405_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-37-27-675_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-37-53-038_com.example.ecommerce.jpg',
+          'lina-ahmad-ghojan/2-ecommerce/Screenshot_2026-05-11-21-38-24-798_com.example.ecommerce.jpg'
+        ],
+        tags: ['Laravel', 'Vue 3', 'Stripe']
+      },
+      edugame: {
+        name: { ar: 'EduGame', en: 'EduGame' },
+        type: { ar: 'تعليم تفاعلي', en: 'Gamified Learning' },
+        details: {
+          ar: 'منصة تعليم تفاعلي بالتحفيز والألعاب تتضمن اختبارات وإنجازات ولوحات صدارة ولوحات واجبات ومتابعة دقيقة لتقدّم الطلاب والمعلمين.',
+          en: 'Interactive gamified e-learning platform featuring quizzes, achievements, leaderboards, assignment dashboards, and detailed progress tracking for students and teachers.'
+        },
+        images: ['lina-ahmad-ghojan/3-Gamified-Learning-Platform/1.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Dashboard.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Assignment Dashboard.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Class.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Login Page.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Discussion page.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Quick Learn Dashboard.png'],
+        tags: ['Vue 3', 'Laravel', 'MySQL']
+      },
+      pharmacy: {
+        name: { ar: 'صيدليتي', en: 'PharmaCare' },
+        type: { ar: 'إدارة صيدلية', en: 'Pharmacy Management' },
+        details: {
+          ar: 'نظام إدارة صيدليات احترافي يشمل إدارة مخزون الأدوية والمبيعات ومتابعة الوصفات الطبية وتتبع العملاء والتقارير المالية والأرصدة.',
+          en: 'Professional pharmacy management platform featuring medicine inventory management, sales processing, prescription tracking, customer management, financial reports, and account balancing.'
+        },
+        images: ['lina-ahmad-ghojan/7-Pharmacy/1.png', 'lina-ahmad-ghojan/7-Pharmacy/Home.png', 'lina-ahmad-ghojan/7-Pharmacy/Product Page.png', 'lina-ahmad-ghojan/7-Pharmacy/Card details 1.png', 'lina-ahmad-ghojan/7-Pharmacy/Checkout 1.png', 'lina-ahmad-ghojan/7-Pharmacy/items1.png'],
+        tags: ['Laravel', 'Vue 3', 'PostgreSQL']
+      },
+      bahasaku: {
+        name: { ar: 'BahasaKu', en: 'BahasaKu' },
+        type: { ar: 'تعليم لغات', en: 'Language Learning' },
+        details: {
+          ar: 'منصة تعليم لغات محلية متطورة توفر دروساً منظمة واختبارات تفاعلية وتتبع دقيق لتقدم الدارسين مع واجهة سهلة الاستخدام.',
+          en: 'Advanced local language learning platform offering organized lessons, interactive quizzes, detailed learner progress tracking, and an intuitive user interface for language mastery.'
+        },
+        images: ['lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/1.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/iPhone.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 1.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 4.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 5.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 7.png'],
+        tags: ['Flutter', 'Laravel', 'MySQL']
+      },
+      rentflow: {
+        name: { ar: 'RentFlow', en: 'RentFlow' },
+        type: { ar: 'إدارة إيجارات', en: 'Rental Management' },
+        details: {
+          ar: 'نظام متكامل لإدارة الإيجارات والعقارات مع تتبع المستأجرين والعقود والتحصيل وطلبات الصيانة والتقارير المالية.',
+          en: 'Complete property rental management system with tenant tracking, lease contracts, payment collection, maintenance request portal, and financial reporting.'
+        },
+        images: ['lina-ahmad-ghojan/5-Rent-Management/1.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 1.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 4.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 5.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 7.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 8.png'],
+        tags: ['Laravel', 'Vue 3', 'PostgreSQL']
+      },
+      transithub: {
+        name: { ar: 'TransitHub', en: 'TransitHub' },
+        type: { ar: 'نقل ذكي', en: 'Smart Transport' },
+        details: {
+          ar: 'منصة نقل ذكي وإدارة أساطيل مع تتبع مباشر للسائقين وتحسين المسارات ومراقبة الوقود وجدولة الصيانة وتحليلات الرحلات.',
+          en: 'Smart transport and fleet management platform with live driver tracking, route optimization, fuel monitoring, maintenance scheduling, and trip analytics.'
+        },
+        images: ['lina-ahmad-ghojan/6-smart%20transport%20platform/1.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/01.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/02.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/03.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/04.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/05.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/Scene 1.png'],
+        tags: ['Laravel', 'Vue 3', 'Flutter']
+      },
+      educare: {
+        name: { ar: 'EduCare', en: 'EduCare' },
+        type: { ar: 'إدارة تعليم', en: 'Education' },
+        details: {
+          ar: 'نظام شامل لإدارة المدارس مع سجلات الطلاب والحضور والدرجات والرسوم والواجبات والفعاليات والتواصل مع أولياء الأمور.',
+          en: 'Comprehensive school management system with student records, attendance tracking, grade management, billing, homework, events, and parent communication portal.'
+        },
+        images: ['lina-ahmad-ghojan/8-school/1.png', 'lina-ahmad-ghojan/8-school/Login.png', 'lina-ahmad-ghojan/8-school/Sessions.png', 'lina-ahmad-ghojan/8-school/Teacher.png', 'lina-ahmad-ghojan/8-school/Home Work.png', 'lina-ahmad-ghojan/8-school/Events.png', 'lina-ahmad-ghojan/8-school/Finance_fees head.png', 'lina-ahmad-ghojan/8-school/noticeboard.png'],
+        tags: ['Laravel', 'Vue 3', 'MySQL']
+      },
+      wareflow: {
+        name: { ar: 'WareFlow', en: 'WareFlow' },
+        type: { ar: 'مخزون ومستودعات', en: 'Inventory Management' },
+        details: {
+          ar: 'نظام متكامل لإدارة المخزون والمستودعات مع تتبع الأصول والأدوات وتقارير GRN وتخصيص المواد حسب المشروع ومرشحات متقدمة ودعم الباركود.',
+          en: 'Full inventory and warehouse management system with asset tracking, tools management, GRN reporting, project-based item allocation, filters, and barcode scanning support.'
+        },
+        images: ['lina-ahmad-ghojan/9-Inventory-Management-System-/05 Dashboard.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/1.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/Assets.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/All Items.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/GRN Report.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/Project.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/Request.png'],
+        tags: ['Laravel', 'Vue 3', 'PostgreSQL']
+      },
+      staffhub: {
+        name: { ar: 'StaffHub', en: 'StaffHub' },
+        type: { ar: 'موارد بشرية', en: 'HR Dashboard' },
+        details: {
+          ar: 'لوحة موارد بشرية لإدارة حضور الموظفين والرواتب والرسائل وتحليلات الأقسام للشركات النامية.',
+          en: 'HR management dashboard featuring employee attendance tracking, payroll processing, messaging, and department analytics built for growing teams.'
+        },
+        images: ['lina-ahmad-ghojan/10-HR Management Dashboard (Community)/payroll.png', 'lina-ahmad-ghojan/10-HR Management Dashboard (Community)/employee attendance.png', 'lina-ahmad-ghojan/10-HR Management Dashboard (Community)/message.png', 'lina-ahmad-ghojan/10-HR Management Dashboard (Community)/message-1.png'],
+        tags: ['Laravel', 'Vue 3', 'MySQL']
+      }
+    };
+
+    const projectAliases = {
+      shopnest: 'ShopNest',
+      bahasaku: 'bahasaku',
+      '2bahasaku': 'bahasaku'
+    };
+
+    const catalogKeyByLower = Object.keys(projectCatalog).reduce((acc, key) => {
+      acc[key.toLowerCase()] = key;
+      return acc;
+    }, {});
+
+    function resolveProjectKey(rawKey) {
+      if (!rawKey) return null;
+      const trimmed = rawKey.trim();
+      if (projectCatalog[trimmed]) return trimmed;
+
+      const normalized = trimmed.toLowerCase().replace(/\s+/g, '');
+      if (projectAliases[normalized]) return projectAliases[normalized];
+      if (catalogKeyByLower[normalized]) return catalogKeyByLower[normalized];
+
+      const withoutLeadingDigits = normalized.replace(/^\d+/, '');
+      if (projectAliases[withoutLeadingDigits]) return projectAliases[withoutLeadingDigits];
+      if (catalogKeyByLower[withoutLeadingDigits]) return catalogKeyByLower[withoutLeadingDigits];
+
+      return null;
+    }
+
+    let currentImageIndex = 0;
+    let currentProject = null;
+
+    const params = new URLSearchParams(window.location.search);
+    const projectKey = resolveProjectKey(params.get('project'));
+    const storedLang = localStorage.getItem('atlas-lang') || 'ar';
+    let currentLang = params.get('lang') || storedLang;
+    if (!translations[currentLang]) currentLang = 'ar';
+
+    function buildWhatsAppLink(message) {
+      return `https://wa.me/971524859625?text=${encodeURIComponent(message)}`;
+    }
+
+    function getProjectPageUrl(key, lang) {
+      const next = new URL(`${SITE_URL}/project-details.html`);
+      if (key) next.searchParams.set('project', key);
+      if (lang === 'en') next.searchParams.set('lang', 'en');
+      return next.toString();
+    }
+
+    function buildProjectSeo(project, lang, key) {
+      if (!project || !key) {
+        return {
+          title: translations[lang].pageTitle,
+          description: translations[lang].defaultDescription,
+          canonical: `${SITE_URL}/default.html`,
+          robots: 'noindex, follow',
+          image: `${SITE_URL}/logo/logo4.png`,
+          imageAlt: 'AtlasDev logo'
+        };
+      }
+
+      const title = lang === 'ar'
+        ? `${project.name.ar} | ${project.type.ar} | AtlasDev`
+        : `${project.name.en} | ${project.type.en} | AtlasDev`;
+      const description = lang === 'ar'
+        ? `${project.details.ar} تقنيات التنفيذ: ${project.tags.join('، ')}.`
+        : `${project.details.en} Delivery stack: ${project.tags.join(', ')}.`;
+      const imagePath = project.images[0].replace(/ /g, '%20');
+
+      return {
+        title,
+        description,
+        canonical: getProjectPageUrl(key, lang),
+        robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+        image: `${SITE_URL}/${imagePath}`,
+        imageAlt: `${project.name[lang]} ${project.type[lang]}`
+      };
+    }
+
+    function buildProjectSchema(project, lang, key, seo) {
+      if (!project || !key) return null;
+
+      return {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            '@id': `${SITE_URL}/#organization`,
+            name: 'AtlasDev',
+            url: `${SITE_URL}/default.html`,
+            logo: `${SITE_URL}/logo/logo4.png`,
+            email: 'info@atlasdev.tech',
+            telephone: '+971524859625',
+            availableLanguage: ['ar', 'en']
+          },
+          {
+            '@type': 'BreadcrumbList',
+            '@id': `${seo.canonical}#breadcrumbs`,
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'AtlasDev',
+                item: `${SITE_URL}/default.html`
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: lang === 'ar' ? 'المشاريع' : 'Projects',
+                item: `${SITE_URL}/default.html${lang === 'en' ? '?lang=en' : ''}#projects`
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: project.name[lang],
+                item: seo.canonical
+              }
+            ]
+          },
+          {
+            '@type': 'CreativeWork',
+            '@id': `${seo.canonical}#case-study`,
+            name: project.name[lang],
+            headline: seo.title,
+            description: seo.description,
+            inLanguage: lang,
+            image: project.images.map(image => `${SITE_URL}/${image.replace(/ /g, '%20')}`),
+            genre: project.type[lang],
+            keywords: project.tags.join(', '),
+            author: { '@id': `${SITE_URL}/#organization` },
+            publisher: { '@id': `${SITE_URL}/#organization` },
+            mainEntityOfPage: seo.canonical,
+            url: seo.canonical
+          }
+        ]
+      };
+    }
+
+    function applyProjectSeo(project, lang, key) {
+      const seo = buildProjectSeo(project, lang, key);
+      const ogLocale = lang === 'ar' ? 'ar_AE' : 'en_US';
+
+      document.title = seo.title;
+      metaDescription.setAttribute('content', seo.description);
+      metaRobots.setAttribute('content', seo.robots);
+      canonicalLink.setAttribute('href', seo.canonical);
+      alternateAr.setAttribute('href', getProjectPageUrl(key, 'ar'));
+      alternateEn.setAttribute('href', getProjectPageUrl(key, 'en'));
+      alternateDefault.setAttribute('href', getProjectPageUrl(key, 'ar'));
+      metaOgTitle.setAttribute('content', seo.title);
+      metaOgDescription.setAttribute('content', seo.description);
+      metaOgUrl.setAttribute('content', seo.canonical);
+      metaOgImage.setAttribute('content', seo.image);
+      metaOgImageAlt.setAttribute('content', seo.imageAlt);
+      metaOgLocale.setAttribute('content', ogLocale);
+      metaTwitterTitle.setAttribute('content', seo.title);
+      metaTwitterDescription.setAttribute('content', seo.description);
+      metaTwitterImage.setAttribute('content', seo.image);
+
+      const schema = buildProjectSchema(project, lang, key, seo);
+      schemaNode.textContent = schema ? JSON.stringify(schema) : '';
+    }
+
+    function projectMessage(project, lang) {
+      return lang === 'ar'
+        ? `مرحباً AtlasDev، أريد مشروع مشابه لـ ${project.name.ar} (${project.type.ar}).`
+        : `Hello AtlasDev, I need a project similar to ${project.name.en} (${project.type.en}).`;
+    }
+
+    function setUrlLang() {
+      const next = new URL(window.location.href);
+      next.searchParams.set('lang', currentLang);
+      window.history.replaceState({}, '', next);
+    }
+
+    function updateSlider() {
+      const img = document.getElementById('sliderImage');
+      if (img && currentProject) {
+        img.src = currentProject.images[currentImageIndex];
+        document.getElementById('imageCounter').textContent = `${currentImageIndex + 1} / ${currentProject.images.length}`;
+      }
+    }
+
+    function nextImage() {
+      if (currentProject) {
+        currentImageIndex = (currentImageIndex + 1) % currentProject.images.length;
+        updateSlider();
+      }
+    }
+
+    function prevImage() {
+      if (currentProject) {
+        currentImageIndex = (currentImageIndex - 1 + currentProject.images.length) % currentProject.images.length;
+        updateSlider();
+      }
+    }
+
+    function render() {
+      const locale = translations[currentLang];
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+      document.getElementById('backBtn').textContent = locale.back;
+      document.getElementById('waLabel').textContent = locale.wa;
+      document.getElementById('langBtn').textContent = locale.langSwitch;
+
+      const project = projectCatalog[projectKey];
+      if (!project) {
+        applyProjectSeo(null, currentLang, null);
+        document.getElementById('projectTitle').textContent = locale.defaultTitle;
+        document.getElementById('projectType').textContent = '';
+        document.getElementById('contentContainer').style.display = 'none';
+        const empty = document.getElementById('emptyState');
+        empty.style.display = 'block';
+        empty.textContent = locale.invalid;
+        document.getElementById('waBtn').style.display = 'none';
+        return;
+      }
+
+      currentProject = project;
+      currentImageIndex = 0;
+  applyProjectSeo(project, currentLang, projectKey);
+
+      document.getElementById('projectTitle').textContent = project.name[currentLang];
+      document.getElementById('projectType').textContent = project.type[currentLang];
+
+      const container = document.getElementById('contentContainer');
+      container.innerHTML = `
+        <div class="hero-section">
+          <div class="gallery-container">
+            <div class="slider-wrapper">
+              <img id="sliderImage" class="slider-image" src="${project.images[0]}" alt="${project.name[currentLang]} ${project.type[currentLang]}">
+            </div>
+            <div class="slider-controls">
+              <button class="slider-btn" onclick="prevImage()">←</button>
+              <span class="slider-counter" id="imageCounter">1 / ${project.images.length}</span>
+              <button class="slider-btn" onclick="nextImage()">→</button>
+            </div>
+          </div>
+          <div class="info-section">
+            <span class="badge">${locale.badge}</span>
+            <p class="desc">${project.details[currentLang]}</p>
+            <div class="tags">${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('contentContainer').style.display = 'block';
+      document.getElementById('emptyState').style.display = 'none';
+      document.getElementById('waBtn').href = buildWhatsAppLink(projectMessage(project, currentLang));
+      document.getElementById('waBtn').style.display = 'inline-flex';
+      
+      localStorage.setItem('atlas-lang', currentLang);
+      setUrlLang();
+    }
+
+    document.getElementById('langBtn').addEventListener('click', () => {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      render();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') prevImage();
+      if (e.key === 'ArrowLeft') nextImage();
+    });
+
+    render();
+  </script>
+</body>
+
+</html>
