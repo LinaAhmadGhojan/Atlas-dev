@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lina Ahmad Ghojan — Software Engineer & front-end Vueer</title>
+  <meta name="description"
+    content="Portfolio of Lina Ahmad Ghojan — Full-Stack Engineer (Laravel · Vue.js · MySQL) and UI/UX Designer with 4+ years of experience.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Lina Ahmad Ghojan">
+  <meta name="theme-color" content="#0F0F0F">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="AtlasDev">
+  <meta property="og:title" content="Lina Ahmad Ghojan — Software Engineer & Front-End Specialist">
+  <meta property="og:description"
+    content="Portfolio of Lina Ahmad Ghojan — Full-Stack Engineer and UI/UX Designer building Laravel, Vue.js, and product design work.">
+  <meta property="og:url" content="https://atlasdev.tech/lina-ahmad-ghojan/index.html">
+  <meta property="og:image" content="https://atlasdev.tech/lina-ahmad-ghojan/1-resturant/1.png">
+  <meta property="og:image:alt" content="Portfolio preview by Lina Ahmad Ghojan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lina Ahmad Ghojan — Software Engineer & Front-End Specialist">
+  <meta name="twitter:description"
+    content="Portfolio of Lina Ahmad Ghojan — Full-Stack Engineer and UI/UX Designer building Laravel, Vue.js, and product design work.">
+  <meta name="twitter:image" content="https://atlasdev.tech/lina-ahmad-ghojan/1-resturant/1.png">
+  <link rel="canonical" href="https://atlasdev.tech/lina-ahmad-ghojan/index.html">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://atlasdev.tech/lina-ahmad-ghojan/index.html#person",
+          "name": "Lina Ahmad Ghojan",
+          "jobTitle": "Full-Stack Engineer and UI/UX Designer",
+          "url": "https://atlasdev.tech/lina-ahmad-ghojan/index.html",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "AtlasDev"
+          },
+          "knowsAbout": ["Laravel", "Vue.js", "MySQL", "UI/UX Design", "Frontend Development"]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://atlasdev.tech/lina-ahmad-ghojan/index.html#webpage",
+          "url": "https://atlasdev.tech/lina-ahmad-ghojan/index.html",
+          "name": "Lina Ahmad Ghojan Portfolio",
+          "description": "Portfolio of Lina Ahmad Ghojan showcasing product design, dashboard, e-commerce, education, and business system work.",
+          "about": {
+            "@id": "https://atlasdev.tech/lina-ahmad-ghojan/index.html#person"
+          }
+        }
+      ]
+    }
+  </script>
+  <link rel="icon" type="image/png" href="../logo/logo4.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ══════════════════════════════════════════
+       PORTFOLIO GALLERY EXTENSIONS
+    ══════════════════════════════════════════ */
+
+    /* ── Hero ── */
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 4rem;
+      align-items: center;
+      padding: 3rem 0 3.5rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--blue-50);
+      border: 1px solid var(--line);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-bottom: 1.2rem;
+    }
+
+    .dot-live {
+      width: 7px;
+      height: 7px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: .5;
+        transform: scale(1.4);
+      }
+    }
+
+    .hero-name {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-name .accent {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-para {
+      font-size: 0.98rem;
+      color: var(--muted);
+      max-width: 52ch;
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .hero-meta a {
+      color: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .hero-meta a:hover {
+      text-decoration: underline;
+    }
+
+    /* stats on right side */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.4rem;
+      box-shadow: var(--shadow);
+      transition: transform 220ms;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .stat-card .val {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent-dark);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-card .lbl {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ── Contribution cards ── */
+    .role-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin: 2.5rem 0 3.5rem;
+    }
+
+    .role-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.4rem;
+      box-shadow: var(--shadow);
+      transition: border-color 220ms, transform 220ms;
+    }
+
+    .role-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .role-icon {
+      font-size: 1.9rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .role-card h4 {
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+    }
+
+    .role-card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── Section header ── */
+    .pg-section-head {
+      margin-bottom: 1.8rem;
+    }
+
+    .pg-section-head h2 {
+      margin-bottom: 0.4rem;
+    }
+
+    .pg-section-head p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 60ch;
+    }
+
+    /* ── Filter tabs ── */
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border: 1.5px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 180ms;
+      font-family: inherit;
+    }
+
+    .filter-btn span {
+      font-size: 0.72rem;
+      background: var(--blue-100);
+      color: var(--accent-dark);
+      padding: 1px 7px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+    }
+
+    .filter-btn.active {
+      background: var(--grad);
+      border-color: transparent;
+      color: var(--onyx);
+    }
+
+    .filter-btn.active span {
+      background: rgba(15, 15, 15, .12);
+      color: var(--onyx);
+    }
+
+    /* ── Project grid ── */
+    .pg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+    }
+
+    .pg-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 1.2rem;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 260ms, box-shadow 260ms, border-color 260ms;
+      box-shadow: 0 2px 12px rgba(15, 15, 15, .07);
+    }
+
+    .pg-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 44px rgba(254, 208, 0, .18);
+      border-color: var(--accent);
+    }
+
+    .pg-thumb {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      background: var(--blue-50);
+    }
+
+    .pg-info {
+      padding: 0.9rem 1rem 1rem;
+    }
+
+    .pg-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.3rem;
+    }
+
+    .pg-type-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 999px;
+    }
+
+    .badge-fullstack {
+      background: rgba(254, 208, 0, .14);
+      color: var(--accent-dark);
+    }
+
+    .badge-design {
+      background: rgba(13, 148, 136, .1);
+      color: #0d9488;
+    }
+
+    .pg-name {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .pg-roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .rp {
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid;
+    }
+
+    .rp-backend {
+      color: var(--accent-dark);
+      border-color: var(--blue-300);
+      background: var(--blue-50);
+    }
+
+    .rp-dashboard {
+      color: #0f766e;
+      border-color: #5eead4;
+      background: rgba(15, 118, 110, .07);
+    }
+
+    .rp-db {
+      color: #7c3aed;
+      border-color: #c4b5fd;
+      background: rgba(124, 58, 237, .06);
+    }
+
+    .rp-design {
+      color: #0d9488;
+      border-color: #99f6e4;
+      background: rgba(13, 148, 136, .06);
+    }
+
+    .rp-mobile {
+      color: #b45309;
+      border-color: #fcd34d;
+      background: rgba(180, 83, 9, .06);
+    }
+
+    .pg-card.hidden {
+      display: none;
+    }
+
+    /* ══ MODAL / LIGHTBOX ══════════════════════════ */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 15, 15, .88);
+      backdrop-filter: blur(7px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 260ms ease;
+      padding: 1rem;
+    }
+
+    .modal.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal-panel {
+      background: var(--card-bg);
+      border-radius: 1.4rem;
+      width: min(1100px, 98vw);
+      height: min(96vh, 960px);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 32px 96px rgba(15, 15, 15, .3);
+      transform: scale(.95) translateY(12px);
+      transition: transform 280ms cubic-bezier(.34, 1.56, .64, 1);
+    }
+
+    .modal.open .modal-panel {
+      transform: scale(1) translateY(0);
+    }
+
+    /* modal header */
+    .modal-header {
+      padding: 1.2rem 1.4rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+
+    .modal-header-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .modal-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .modal-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .modal-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-desc-header {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+      padding: 0.5rem 0.85rem;
+      background: var(--blue-50);
+      border: 1px solid var(--line);
+      border-radius: 0.6rem;
+      margin-top: 0.2rem;
+    }
+
+    .mtag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: var(--blue-50);
+      color: var(--accent-dark);
+      border: 1px solid var(--line);
+    }
+
+    .modal-close {
+      background: var(--blue-50);
+      border: 1px solid var(--line);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      transition: all 160ms;
+      flex-shrink: 0;
+      font-family: inherit;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      background: #fee2e2;
+      color: #dc2626;
+      border-color: #fca5a5;
+    }
+
+    /* image viewer */
+    .modal-viewer {
+      position: relative;
+      flex: 1;
+      min-height: 0;
+      background: var(--onyx);
+      overflow: hidden;
+    }
+
+    .slide-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center center;
+      opacity: 0;
+      transition: opacity 220ms ease;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .slide-img.active {
+      opacity: 1;
+    }
+
+    /* nav arrows */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: rgba(255, 255, 255, .92);
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      font-size: 1.4rem;
+      line-height: 1;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      color: var(--accent-dark);
+      transition: all 160ms;
+      box-shadow: 0 4px 14px rgba(15, 15, 15, .12);
+      font-family: inherit;
+    }
+
+    .nav-btn:hover {
+      background: var(--accent);
+      color: var(--onyx);
+      border-color: var(--accent);
+    }
+
+    .nav-btn.prev {
+      left: 10px;
+    }
+
+    .nav-btn.next {
+      right: 10px;
+    }
+
+    .nav-btn:disabled {
+      opacity: .3;
+      cursor: not-allowed;
+    }
+
+    /* modal footer */
+    .modal-footer {
+      padding: 0.6rem 1.4rem 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      border-top: 1px solid var(--line);
+      flex-shrink: 0;
+    }
+
+    .modal-counter {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    /* dot strip */
+    .dot-strip {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 260px;
+    }
+
+    .dot-strip button {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--line);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: all 160ms;
+      flex-shrink: 0;
+    }
+
+    .dot-strip button.active {
+      background: var(--accent);
+      width: 18px;
+      border-radius: 4px;
+    }
+
+    /* ── Experience ── */
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .exp-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 0 1.5rem;
+      align-items: start;
+    }
+
+    .exp-date {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding-top: 3px;
+      line-height: 1.5;
+    }
+
+    .exp-company {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-role {
+      font-size: 0.88rem;
+      color: var(--accent-dark);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .exp-ul {
+      padding-left: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .exp-ul li {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── Skills ── */
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      padding: 1.2rem;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .sk {
+      padding: 0.38rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--blue-50);
+      color: var(--accent-dark);
+      border: 1px solid var(--line);
+    }
+
+    /* ── Contact ── */
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .c-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--blue-50);
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-row a {
+      color: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Spacing helpers ── */
+    .section-gap {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 980px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding-top: 4rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 480px;
+      }
+
+      .role-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pg-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .exp-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .pg-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .role-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+      .modal-desc {
+        text-align: center;
+        max-width: none;
+      }
+
+      .dot-strip {
+        display: none;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .portfolio-nav .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── Header ── -->
+  <nav class="portfolio-nav" aria-label="Site navigation">
+    <div class="section nav-inner">
+      <a href="../default.html" class="logo">
+        <img src="../logo/logo1.png" alt="AtlasDev" style="height:52px;width:auto;display:block;">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <a class="btn btn-primary" href="Lina-ghojan-cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section id="hero" class="section">
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="dot-live"></span>
+            Available for ERP &amp; backend opportunities
+          </div>
+          <h1 class="hero-name">
+            Hi, I'm <span class="accent">Lina Ahmad Ghojan</span>
+          </h1>
+          <p class="hero-title">Full-Stack Software Engineer · front-end Vueer</p>
+          <p class="hero-para">
+            I build the backend and design the database.
+            When the project includes a dashboard or admin panel, the interface design is mine too.
+            Laravel, Vue.js, MySQL — 4+ years turning business requirements into working systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-meta">
+            <span>Syria — Damascus</span>
+            <span><a href="mailto:eng.lina.ghojan@gmail.com">eng.lina.ghojan@gmail.com</a></span>
+            <span><a href="tel:+963995019487">+963 995 019 487</a></span>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="val">4+</div>
+            <div class="lbl">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="val">10</div>
+            <div class="lbl">ERP Modules Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="val">10</div>
+            <div class="lbl">Portfolio Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="val">2</div>
+            <div class="lbl">Core Languages</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── What I Do ── -->
+    <section id="role" class="section section-gap">
+      <div class="pg-section-head">
+        <p class="eyebrow">My Contribution</p>
+        <h2>What I Build in Every Project</h2>
+        <p>
+          My role is always clearly defined — backend engineering and database architecture.
+          On projects that include an admin dashboard, the UI/UX design is mine as well.
+        </p>
+      </div>
+
+      <div class="role-cards">
+        <div class="role-card">
+          <div class="role-icon">⚙️</div>
+          <h4>Backend Engineering</h4>
+          <p>
+            Laravel APIs, business logic, authentication, role-based access, multi-module ERP architecture,
+            Eloquent ORM, queues, and cron jobs.
+          </p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">🗄️</div>
+          <h4>Database Architecture</h4>
+          <p>
+            MySQL schema design from scratch, relational modelling, migrations, query optimisation,
+            reporting structures, and data integrity constraints.
+          </p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">🎨</div>
+          <h4>UI / UX Design</h4>
+          <p>
+            When the project includes an admin dashboard or client-facing interface, the screen design
+            is also mine — from Figma wireframes to final handoff.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Projects ── -->
+    <section id="projects" class="section section-gap">
+      <div class="pg-section-head">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects &amp; Designs</h2>
+        <p>Click any card to browse screenshots. Each badge tells you exactly what I worked on.</p>
+      </div>
+
+      <div class="filter-tabs" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All <span
+            id="cnt-all"></span></button>
+        <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack <span
+            id="cnt-fs"></span></button>
+        <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">front-end Vue <span
+            id="cnt-d"></span></button>
+      </div>
+
+      <div class="pg-grid" id="projectsGrid" aria-label="Projects gallery"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Experience ── -->
+    <section id="experience" class="section section-gap">
+      <div class="pg-section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've Worked</h2>
+      </div>
+
+      <div class="exp-list">
+        <div class="exp-card">
+          <div class="exp-date">2021 — Present</div>
+          <div>
+            <div class="exp-company">CamelCase Company</div>
+            <div class="exp-role">Full-Stack Developer — ERP Division</div>
+            <ul class="exp-ul">
+              <li>Developed and maintained a large-scale ERP system covering 10+ modules: manufacturing, catalog,
+                logistics, sales, HR, warehouse, promotions, CRM, compliance, and supplier evaluation.</li>
+              <li>Built REST APIs consumed by Vue.js frontend and mobile applications; designed all underlying MySQL
+                schemas.</li>
+              <li>Designed admin dashboard interfaces for multiple modules using Figma — then collaborated with frontend
+                team for implementation.</li>
+              <li>Integrated third-party services including payment gateways, shipping providers, and external ERP
+                connectors.</li>
+              <li>Optimised complex SQL queries, reducing report generation time by over 60%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-date">Freelance</div>
+          <div>
+            <div class="exp-company">Independent Projects</div>
+            <div class="exp-role">Full-Stack Developer &amp; front-end Vueer</div>
+            <ul class="exp-ul">
+              <li>Delivered end-to-end web and mobile systems: Inventory Management, School System, Rent Management,
+                Smart Transport, Restaurant Management, and E-Commerce platforms.</li>
+              <li>For each project: designed the database schema, built the Laravel backend, and designed all dashboard
+                interfaces.</li>
+              <li>Created mobile UI kits and app designs (Figma) for HR, pharmacy, learning management, task management,
+                and coffee shop apps.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Skills ── -->
+    <section id="skills" class="section section-gap">
+      <div class="pg-section-head">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-wrap">
+        <span class="sk">Laravel 11</span>
+        <span class="sk">PHP 8</span>
+        <span class="sk">Vue.js 3</span>
+        <span class="sk">Inertia.js</span>
+        <span class="sk">MySQL</span>
+        <span class="sk">PostgreSQL</span>
+        <span class="sk">REST API</span>
+        <span class="sk">Eloquent ORM</span>
+        <span class="sk">Redis</span>
+        <span class="sk">Blade</span>
+        <span class="sk">Tailwind CSS</span>
+        <span class="sk">Figma</span>
+        <span class="sk">Git</span>
+        <span class="sk">Linux Server</span>
+        <span class="sk">Nginx</span>
+        <span class="sk">Docker</span>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ── Contact ── -->
+    <section id="contact" class="section section-gap">
+      <div class="pg-section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's Work Together</h2>
+        <p>Open to backend and full-stack roles, ERP projects, and front-end Vue collaborations.</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-list">
+          <div class="contact-row">
+            <div class="c-icon">📧</div><a href="mailto:eng.lina.ghojan@gmail.com">eng.lina.ghojan@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <div class="c-icon">📞</div><a href="tel:+963995019487">+963 995 019 487</a>
+          </div>
+          <div class="contact-row">
+            <div class="c-icon">📍</div><span>Syria — Damascus · Open to Remote</span>
+          </div>
+          <div class="contact-row">
+            <div class="c-icon">🌐</div><span>Arabic &amp; English</span>
+          </div>
+        </div>
+        <div>
+          <a href="Lina-ghojan-cv.pdf" class="btn btn-primary" target="_blank" rel="noreferrer"
+            style="margin-bottom:1rem;display:inline-flex;">
+            Download CV ↗
+          </a>
+          <p style="font-size:.88rem;color:var(--muted);line-height:1.7;margin-top:.75rem;">
+            Available for ERP backend positions, full-stack freelance projects,
+            and UI/UX design work. I reply within 24 hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer style="border-top:1px solid var(--line);padding:2rem 0;">
+    <div class="section" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <span style="font-size:.82rem;color:var(--muted);">© 2026 Lina Ahmad Ghojan</span>
+      <a href="../default.html" style="font-size:.82rem;color:var(--accent-dark);text-decoration:none;">← Back to
+        AtlasDev</a>
+    </div>
+  </footer>
+
+  <!-- ══ MODAL ══════════════════════════════════════════ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <div class="modal-title" id="modalTitle"></div>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close viewer">×</button>
+      </div>
+
+      <div class="modal-viewer" id="modalViewer" aria-live="polite">
+        <button class="nav-btn prev" id="prevBtn" aria-label="Previous screenshot">&#8249;</button>
+        <button class="nav-btn next" id="nextBtn" aria-label="Next screenshot">&#8250;</button>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-counter" id="modalCounter">1 / 1</div>
+        <div class="dot-strip" id="dotStrip"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    'use strict';
+
+    /* ─── Theme (shared with AtlasDev default page) ─── */
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('atlas-theme') || 'light';
+    html.setAttribute('data-theme', savedTheme);
+
+    function updateThemeButton() {
+      if (!themeToggle) return;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      themeToggle.textContent = isDark ? '☀️' : '🌙';
+      themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      themeToggle.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('atlas-theme', next);
+        updateThemeButton();
+      });
+    }
+    updateThemeButton();
+  </script>
+
+  <!-- ══ SCRIPT ════════════════════════════════════════ -->
+  <script>
+    'use strict';
+
+    /* ─── Project data ──────────────────────────────────── */
+    const PROJECTS = [
+      {
+        name: 'Restaurant Management',
+        type: 'fullstack',
+        desc: 'Restaurant operations system — menu management, table orders, inventory, kitchen flow, and daily sales reports.',
+        roles: ['Laravel API', 'Admin Dashboard', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '1-resturant',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Scene 1.png', 'Scene 7.png', 'Scene 8.png', 'Scene.png',
+          'All.png', 'isometric-mockups-3.png', 'Mockups 3d Pacific Blue.png'
+        ]
+      },
+      {
+        name: 'E-Commerce Platform',
+        type: 'fullstack',
+        desc: 'Full-featured online shopping platform with product catalog, orders, cart, and multi-vendor management.',
+        roles: ['Laravel API', 'Admin Dashboard', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '2-ecommerce',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Scene 4.png', 'Scene 5.png', 'Scene 7.png', 'Scene 8 (1).png',
+          'iPhone.png', '01.png', '02.png', '03.png', '04.png', '05.png', '06.png',
+          '07.png', '08.png', '09.png', '10.png', '11.png', '12.png', '13.png', '14.png'
+        ]
+      },
+      {
+        name: 'Gamified Learning Platform',
+        type: 'design',
+        desc: 'Interactive e-learning with gamified modules, assignment tracking, class discussions, and progress analytics.',
+        roles: ['Laravel API', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '3-Gamified-Learning-Platform',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Dashboard.png', 'Login Page.png', 'Class.png', 'Assignment Dashboard.png',
+          'Specific Assignment Page.png', 'Discussion page.png', 'Announcement Page.png',
+          'Quick Learn Dashboard.png', 'Quick Learn levels.png',
+          'Quick Learn Angle Module 1.png', 'Quick Learn Angle Module 2.png',
+          'Quick Learn Angle Module 3.png', 'Scene 1.png', 'Scene 5.png', 'Scene 12.png', 'Scene 13.png'
+        ]
+      },
+      {
+        name: 'BahasaKu — Language E-Learning',
+        type: 'design',
+        desc: 'Mobile e-learning UI kit for local language learning — interactive lessons, progress tracking, and community features.',
+        roles: ['Laravel API', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '4-[Free] BahasaKu E-learning local language ui kit (Community)',
+        thumb: '1.png',
+        images: [
+          '1.png', '08.png', '11.png', '13.png',
+          'Group 47257.png', 'iPhone.png',
+          'Scene 1.png', 'Scene 4.png', 'Scene 5.png', 'Scene 7.png', 'Scene 8.png'
+        ]
+      },
+      {
+        name: 'Rent Management System',
+        type: 'design',
+        desc: 'Property rental platform — listing search, tenant profiles, lease tracking, payments, and landlord-tenant chat.',
+        roles: ['Laravel API', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '5-Rent-Management',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Scene 1.png', 'Scene 4.png', 'Scene 5.png', 'Scene 7.png', 'Scene 8.png',
+          'iPhone.png', '08.png', '11.png', '13.png'
+        ]
+      },
+      {
+        name: 'Smart Transport Platform',
+        type: 'fullstack',
+        desc: 'Fleet and route management — vehicle tracking, scheduling, driver management, and operations dashboard.',
+        roles: ['Laravel API', 'Admin Dashboard', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '6-smart transport platform',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Scene 1.png', 'Scene 4.png', 'Scene 5.png', 'Scene 7.png', 'Scene 8.png', 'Scene 9.png',
+          'iPhone.png', '01.png', '02.png', '03.png', '04.png', '05.png', '06.png', '07.png',
+          '08.png', '09.png', '10.png', '11.png', '12.png', '13.png', '14.png'
+        ]
+      },
+      {
+        name: 'Pharmacy App',
+        type: 'design',
+        desc: 'Mobile pharmacy e-commerce design — product browsing, cart, checkout, and card payment screens.',
+        roles: ['Laravel API', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '7-Pharmacy',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Home.png', 'splash.png', 'splash-1.png', 'splash-2.png', 'splash-3.png', 'splash-4.png',
+          'Product Page.png', 'Checkout.png', 'Checkout 1.png', 'Checkout 2.png', 'Checkout 3.png',
+          'Checkout 4.png', 'Checkout 6.png', 'Checkout 7.png',
+          'Card details 1.png', 'Card details 2.png', 'Card details 3.png', 'Card details 4.png', 'Card details 5.png',
+          'items1.png', 'items2.png'
+        ]
+      },
+      {
+        name: 'School Management System',
+        type: 'fullstack',
+        desc: 'School administration — enrolment, homework, sessions, billing, events, study materials, and teacher management.',
+        roles: ['Admin Dashboard', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '8-school',
+        thumb: '1.png',
+        images: [
+          '1.png', 'Login.png', 'Register.png', 'Home Work.png', 'Add New Home Work.png',
+          'Events.png', 'Biling(My Plan).png', 'Biling(Credit Card).png', 'Biling(invoice).png',
+          'Finance_fees head.png', 'Finance_fees Group.png', 'Sessions.png', 'Sessions-1.png',
+          'Study Materials.png', 'Teacher.png', 'Student leave.png',
+          'noticeboard.png', 'Organization Profile.png'
+        ]
+      },
+      {
+        name: 'Inventory Management System',
+        type: 'fullstack',
+        desc: 'Inventory tracking platform — assets, tools, items, GRN reports, stock requests, and multi-project management.',
+        roles: [ 'Admin Dashboard', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '9-Inventory-Management-System-',
+        thumb: '1.png',
+        images: [
+          '1.png', '01 Login.png', '02 Forgot Password.png', '03 Enter OTP.png', '04 Login Successfull.png',
+          '05 Dashboard.png', 'All Items.png', 'Assets.png', 'Create Item.png',
+          'Edit items.png', 'Edit Assets.png', 'Edit tools.png',
+          'Filter Item.png', 'Filter Assets.png', 'Filter Tool.png',
+          'GRN Report.png', 'GRN Report-1.png', 'GRN Report-2.png',
+          'On-use.png', 'Project.png', 'Request.png', 'Return.png', 'Table.png',
+          'Add New Assets.png', 'Add New Tool.png'
+        ]
+      },
+      {
+        name: 'HR Management Dashboard',
+        type: 'fullstack',
+        desc: 'HR management dashboard design — attendance tracking, payroll, and internal messaging.',
+        roles: [ 'Admin Dashboard', 'Database Design'],
+        tags: ['Laravel', 'REST API', 'MySQL'],
+        folder: '10-HR Management Dashboard (Community)',
+        thumb: 'payroll.png',
+        images: ['payroll.png', 'employee attendance.png', 'message.png', 'message-1.png']
+      }
+    ];
+
+    /* ─── Helpers ──────────────────────────────────────── */
+    function imgSrc(folder, file) {
+      return encodeURIComponent(folder) + '/' + encodeURIComponent(file);
+    }
+
+    const ROLE_CLASSES = {
+      'Laravel API': 'rp rp-backend',
+      'Admin Dashboard': 'rp rp-dashboard',
+      'Database Design': 'rp rp-db',
+      'Web': 'rp rp-design',
+      'front-end Vue': 'rp rp-mobile'
+    };
+
+    /* ─── Build grid ────────────────────────────────────── */
+    (function buildGrid() {
+      const grid = document.getElementById('projectsGrid');
+      const fsArr = PROJECTS.filter(p => p.type === 'fullstack');
+      const dArr = PROJECTS.filter(p => p.type === 'design');
+
+      document.getElementById('cnt-all').textContent = PROJECTS.length;
+      document.getElementById('cnt-fs').textContent = fsArr.length;
+      document.getElementById('cnt-d').textContent = dArr.length;
+
+      PROJECTS.forEach((p, idx) => {
+        const card = document.createElement('article');
+        card.className = 'pg-card';
+        card.dataset.type = p.type;
+        card.dataset.index = idx;
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('aria-label', 'Open ' + p.name);
+
+        const typeBadge = p.type === 'fullstack' ? 'badge-fullstack' : 'badge-design';
+        const typeLabel = p.type === 'fullstack' ? 'Full-Stack' : ' back-end';
+        const rolePills = p.roles.map(r =>
+          `<span class="${ROLE_CLASSES[r] || 'rp rp-design'}">${r}</span>`
+        ).join('');
+
+        card.innerHTML = `
+      <img class="pg-thumb"
+           src="${imgSrc(p.folder, p.thumb)}"
+           alt="${p.name} thumbnail"
+           loading="${idx < 6 ? 'eager' : 'lazy'}">
+      <div class="pg-info">
+        <div class="pg-top-row">
+          <div class="pg-name">${p.name}</div>
+          <span class="pg-type-badge ${typeBadge}">${typeLabel}</span>
+        </div>
+        <div class="pg-roles">${rolePills}</div>
+      </div>`;
+
+        card.addEventListener('click', () => openModal(idx));
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(idx); } });
+        grid.appendChild(card);
+      });
+    })();
+
+    /* ─── Filter ────────────────────────────────────────── */
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.pg-card').forEach(c => {
+          c.classList.toggle('hidden', f !== 'all' && c.dataset.type !== f);
+        });
+      });
+    });
+
+    /* ─── Modal state ───────────────────────────────────── */
+    let currentIdx = 0;  // project index
+    let currentSlide = 0;  // image index
+
+    const modal = document.getElementById('modal');
+    const viewer = document.getElementById('modalViewer');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const counter = document.getElementById('modalCounter');
+    const dotStrip = document.getElementById('dotStrip');
+
+    /* ─── Open modal ────────────────────────────────────── */
+    function openModal(projectIdx) {
+      currentIdx = projectIdx;
+      currentSlide = 0;
+
+      const p = PROJECTS[projectIdx];
+
+      // Header info
+      document.getElementById('modalTitle').textContent = p.name;
+
+
+
+      // Remove old slides (keep nav buttons)
+      viewer.querySelectorAll('.slide-img').forEach(el => el.remove());
+
+      // Inject slides — only first gets real src, rest get data-src
+      p.images.forEach((name, i) => {
+        const img = document.createElement('img');
+        img.className = 'slide-img' + (i === 0 ? ' active' : '');
+        img.alt = `${p.name} — screenshot ${i + 1}`;
+        if (i === 0) {
+          img.src = imgSrc(p.folder, name);
+        } else {
+          img.dataset.src = imgSrc(p.folder, name);
+        }
+        viewer.appendChild(img);
+      });
+
+      // Dot strip (max 12 dots to avoid overflow)
+      buildDots(p.images.length);
+
+      updateCounter();
+
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modalClose').focus();
+    }
+
+    /* ─── Dot strip ─────────────────────────────────────── */
+    function buildDots(total) {
+      dotStrip.innerHTML = '';
+      const showDots = Math.min(total, 16);
+      for (let i = 0; i < showDots; i++) {
+        const btn = document.createElement('button');
+        btn.setAttribute('aria-label', `Go to screenshot ${i + 1}`);
+        if (i === 0) btn.classList.add('active');
+        btn.addEventListener('click', () => goTo(i));
+        dotStrip.appendChild(btn);
+      }
+    }
+
+    /* ─── Navigate ──────────────────────────────────────── */
+    function goTo(n) {
+      const slides = viewer.querySelectorAll('.slide-img');
+      if (!slides.length) return;
+      const total = slides.length;
+      if (n < 0) n = total - 1;
+      if (n >= total) n = 0;
+
+      slides[currentSlide].classList.remove('active');
+      currentSlide = n;
+      slides[currentSlide].classList.add('active');
+
+      // Lazy-load current + next
+      [currentSlide, (currentSlide + 1) % total].forEach(i => {
+        const img = slides[i];
+        if (img && img.dataset.src) {
+          img.src = img.dataset.src;
+          delete img.dataset.src;
+        }
+      });
+
+      updateCounter();
+    }
+
+    function updateCounter() {
+      const slides = viewer.querySelectorAll('.slide-img');
+      const total = slides.length;
+      counter.textContent = `${currentSlide + 1} / ${total}`;
+
+      // Sync dots
+      const dots = dotStrip.querySelectorAll('button');
+      dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+    }
+
+    prevBtn.addEventListener('click', () => goTo(currentSlide - 1));
+    nextBtn.addEventListener('click', () => goTo(currentSlide + 1));
+
+    /* ─── Close modal ───────────────────────────────────── */
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+      // Return focus to the card that was clicked
+      const card = document.querySelector(`.pg-card[data-index="${currentIdx}"]`);
+      if (card) card.focus();
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+    /* ─── Keyboard ──────────────────────────────────────── */
+    document.addEventListener('keydown', e => {
+      if (!modal.classList.contains('open')) return;
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') goTo(currentSlide - 1);
+      if (e.key === 'ArrowRight') goTo(currentSlide + 1);
+    });
+
+    /* ─── Intersection observer: fade in cards ──────────── */
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'translateY(0)';
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.pg-card, .role-card, .stat-card, .exp-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity .45s ease, transform .45s ease';
+      io.observe(el);
+    });
+  </script>
+
+</body>
+
+</html>
