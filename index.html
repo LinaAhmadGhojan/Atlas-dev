@@ -1,0 +1,3983 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" id="meta-description"
+    content="أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="keywords" content="AtlasDev, Laravel development, Vue.js development, Flutter development, software engineering, ERP systems, dashboards, UAE software company, Syria software company" />
+  <meta name="author" content="AtlasDev" />
+  <meta name="theme-color" content="#0F0F0F" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AtlasDev" />
+  <meta property="og:title" id="meta-og-title" content="أطلس ديف - هندسة برمجيات موثوقة" />
+  <meta property="og:description" id="meta-og-description" content="أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه." />
+  <meta property="og:url" id="meta-og-url" content="https://atlasdev.tech/default.html" />
+  <meta property="og:image" id="meta-og-image" content="https://atlasdev.tech/logo/logo4.png" />
+  <meta property="og:image:alt" id="meta-og-image-alt" content="AtlasDev logo" />
+  <meta property="og:locale" id="meta-og-locale" content="ar_AE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" id="meta-twitter-title" content="أطلس ديف - هندسة برمجيات موثوقة" />
+  <meta name="twitter:description" id="meta-twitter-description" content="أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه." />
+  <meta name="twitter:image" id="meta-twitter-image" content="https://atlasdev.tech/logo/logo4.png" />
+  <title>أطلس ديف - هندسة برمجيات موثوقة</title>
+  <link rel="canonical" id="canonical-link" href="https://atlasdev.tech/default.html" />
+  <link rel="alternate" id="alternate-ar" hreflang="ar" href="https://atlasdev.tech/default.html" />
+  <link rel="alternate" id="alternate-en" hreflang="en" href="https://atlasdev.tech/default.html?lang=en" />
+  <link rel="alternate" id="alternate-x-default" hreflang="x-default" href="https://atlasdev.tech/default.html" />
+  <link rel="icon" type="image/png" href="logo/logo4.png" />
+  <script type="application/ld+json" id="atlasdev-schema"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ─── Reset & Base ─────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Brand Palette ─────────────────────────────────
+       SUPERNOVA  #FED000   rgb(254,208,0)
+       ONYX       #0F0F0F   rgb(15,15,15)
+       SANDSTONE  #EAEFEB   rgb(234,239,235)
+       SANDSTONE2 #747566   rgb(116,117,102)
+    ─────────────────────────────────────────────────── */
+
+    :root {
+      /* Light mode */
+      --font-sans: 'Space Grotesk', sans-serif;
+      --font-ar: 'Cairo', sans-serif;
+      --bg: #EAEFEB;
+      --bg-alt: #F4F6F4;
+      --surface: #FFFFFF;
+      --text: #0F0F0F;
+      --text-muted: #747566;
+      --accent: #FED000;
+      --accent-dark: #c9a400;
+      --onyx: #0F0F0F;
+      --border: rgba(116, 117, 102, .18);
+      --grad: linear-gradient(135deg, #FED000 0%, #f5b800 100%);
+      --grad-dark: linear-gradient(135deg, #c9a400 0%, #FED000 100%);
+      --shadow: rgba(254, 208, 0, .18);
+      --card-bg: #FFFFFF;
+      --nav-bg: rgba(15, 15, 15, .95);
+    }
+
+    [data-theme="dark"] {
+      --bg: #0F0F0F;
+      --bg-alt: #181818;
+      --surface: #1e1e1e;
+      --text: #EAEFEB;
+      --text-muted: #9a9b8e;
+      --accent: #FED000;
+      --accent-dark: #c9a400;
+      --onyx: #0F0F0F;
+      --border: rgba(254, 208, 0, .15);
+      --grad: linear-gradient(135deg, #FED000 0%, #f5b800 100%);
+      --grad-dark: linear-gradient(135deg, #c9a400 0%, #FED000 100%);
+      --shadow: rgba(254, 208, 0, .22);
+      --card-bg: #1e1e1e;
+      --nav-bg: rgba(15, 15, 15, .96);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background .3s, color .3s;
+    }
+
+    html[lang="ar"] body {
+      font-family: var(--font-ar);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ─── Scrollbar ─────────────────────────────────────── */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg-alt);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 3px;
+    }
+
+    /* ─── Utility ───────────────────────────────────────── */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .gradient-text {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #0F0F0F;
+      border: none;
+      font-weight: 700;
+    }
+
+    .btn-primary:hover {
+      opacity: .88;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--shadow);
+    }
+
+    .btn-whatsapp {
+      background: #fed000;
+      color: #0F0F0F;
+      border: none;
+      font-weight: 700;
+    }
+
+    .btn-whatsapp:hover {
+      opacity: .9;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, .28);
+    }
+
+    .btn-whatsapp-header {
+      background: rgba(254, 208, 0, .1);
+      color: #f8f8f8;
+      border: 1px solid rgba(254, 208, 0, .36);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      min-width: 126px;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    .btn-whatsapp-header .wa-icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .btn-whatsapp-header .wa-icon path,
+    .btn-whatsapp-header .wa-icon circle {
+      fill: #fed000;
+    }
+
+    .btn-whatsapp-header:hover {
+      background: rgba(254, 208, 0, .18);
+      color: #ffffff;
+      transform: none;
+      box-shadow: 0 8px 22px rgba(254, 208, 0, .2);
+    }
+
+    .nav-cta .btn-primary {
+      white-space: nowrap;
+      padding: 10px 16px !important;
+      font-size: 14px !important;
+      border-radius: 12px;
+      box-shadow: 0 8px 22px rgba(254, 208, 0, .22);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* ─── Nav ───────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(254, 208, 0, .18);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .28);
+      transition: background .3s;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+      gap: 14px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .logo-icon {
+      width: 38px;
+      height: 38px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+    }
+
+    .logo-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: #0F0F0F;
+    }
+
+    .logo span.dev {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      min-width: 0;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: #d7d9d8;
+      transition: color .25s;
+      white-space: nowrap;
+      display: block;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .nav-cta .btn {
+      min-height: 48px;
+      align-items: center;
+    }
+
+    /* theme toggle */
+    .theme-toggle {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      transition: border-color .25s, background .25s;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      background: rgba(254, 208, 0, .1);
+    }
+
+    .lang-toggle {
+      min-width: 54px;
+      padding: 0 12px;
+      font-size: 13px;
+      font-weight: 700;
+      background: #fed000;
+      color: #111;
+      border-color: #fed000;
+    }
+
+    .lang-toggle:hover {
+      background: #e3bb00;
+      border-color: #e3bb00;
+    }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 2.5px;
+      background: #ffffff;
+      border-radius: 2px;
+      transition: .3s;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .35);
+    }
+
+    /* ─── Hero ──────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 68px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 60% 40%, rgba(254, 208, 0, .10) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 50% at 20% 80%, rgba(254, 208, 0, .06) 0%, transparent 60%),
+        repeating-linear-gradient(135deg, rgba(255, 255, 255, .018) 0 2px, transparent 2px 26px);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+      background: rgba(254, 208, 0, .1);
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .hero-badge span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: .5;
+        transform: scale(1.3);
+      }
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin-bottom: 40px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 56px;
+    }
+
+    .stat-num {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* hero visual */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      background: var(--onyx);
+      border: 1px solid rgba(254, 208, 0, .20);
+      border-radius: 20px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .code-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      font-family: 'Courier New', monospace;
+      font-size: 13.5px;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+      color: #cbd5e1;
+    }
+
+    .code-line:last-child {
+      border-bottom: none;
+    }
+
+    .ln {
+      color: #4a6080;
+      min-width: 20px;
+      font-size: 11px;
+    }
+
+    .kw {
+      color: var(--accent);
+    }
+
+    .fn {
+      color: #38bdf8;
+    }
+
+    .str {
+      color: #22d3a5;
+    }
+
+    .cm {
+      color: #6272a4;
+    }
+
+    .card-tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    .tag-laravel {
+      background: rgba(239, 68, 68, .15);
+      color: #f87171;
+    }
+
+    .tag-vue {
+      background: rgba(52, 211, 153, .15);
+      color: #34d399;
+    }
+
+    .tag-flutter {
+      background: rgba(56, 189, 248, .15);
+      color: #38bdf8;
+    }
+
+    .floating-badge {
+      position: absolute;
+      background: var(--onyx);
+      border: 1px solid rgba(254, 208, 0, .3);
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #EAEFEB;
+    }
+
+    .badge-1 {
+      top: -20px;
+      right: -10px;
+    }
+
+    .badge-2 {
+      bottom: -20px;
+      left: -10px;
+    }
+
+    /* ─── Section headers ───────────────────────────────── */
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ─── Tech strip ────────────────────────────────────── */
+    #technologies {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tech-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: color .25s;
+      text-align: center;
+    }
+
+    .tech-item:hover {
+      color: var(--text);
+    }
+
+    .tech-icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+    }
+
+    /* ─── Services ──────────────────────────────────────── */
+    #services {
+      padding: 100px 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 32px;
+      transition: all .35s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(254, 208, 0, .06);
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity .35s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+    }
+
+    .service-card:hover::after {
+      opacity: .04;
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+      margin-bottom: 24px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .service-tag {
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 500;
+      background: rgba(254, 208, 0, .12);
+      color: var(--accent-dark);
+      border: 1px solid rgba(254, 208, 0, .25);
+    }
+
+    /* ─── Process ───────────────────────────────────────── */
+    #process {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      padding: 32px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      text-align: center;
+      transition: .3s;
+      box-shadow: 0 2px 16px rgba(254, 208, 0, .06);
+    }
+
+    .step:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #0F0F0F;
+      font-weight: 700;
+      font-size: 18px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+    }
+
+    .step h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* ─── About ─────────────────────────────────────────── */
+    #about {
+      padding: 100px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      align-items: start;
+      justify-items: center;
+    }
+
+    .about-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      margin-bottom: 14px;
+    }
+
+    .about-text {
+      max-width: 720px;
+      text-align: center;
+    }
+
+    .about-text h2 {
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .about-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+      justify-content: center;
+    }
+
+    .pill {
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      transition: .25s;
+    }
+
+    .pill:hover {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+    }
+
+    /* ─── Testimonials ─────────────────────────────────── */
+    #testimonials {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px 22px;
+      box-shadow: 0 2px 20px rgba(254, 208, 0, .08);
+      transition: transform .3s ease, border-color .3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .testimonial-stars {
+      color: #d6ad00;
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .testimonial-quote {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .testimonial-author {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .testimonial-role {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .testimonial-metrics {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .testimonial-chip {
+      border: 1px solid rgba(254, 208, 0, .35);
+      background: rgba(254, 208, 0, .1);
+      color: var(--accent-dark);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* ─── Contact ───────────────────────────────────────── */
+    #contact {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .contact-info p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .contact-item a:hover {
+      color: var(--accent-dark);
+    }
+
+    .contact-pair {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .contact-slash {
+      color: var(--text-muted);
+    }
+
+    .contact-brand-shot {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(254, 208, 0, .28);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, .2);
+      background: #0f0f0f;
+      margin-bottom: 24px;
+      max-width: 520px;
+    }
+
+    .contact-brand-shot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .contact-dot {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(254, 208, 0, .12);
+      border: 1px solid var(--border);
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .contact-form {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 32px rgba(254, 208, 0, .08);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      transition: border-color .25s;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: var(--text-muted);
+      opacity: .7;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--accent);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      width: 100%;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    /* ─── Footer ────────────────────────────────────────── */
+    footer {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-muted);
+      transition: color .25s;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+    }
+
+    /* ─── Spam notice banner ────────────────────────────── */
+    .spam-notice {
+      background: rgba(254, 208, 0, .06);
+      border: 1px solid rgba(254, 208, 0, .25);
+      border-radius: 14px;
+      padding: 20px 28px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .spam-notice .icon {
+      font-size: 22px;
+    }
+
+    .spam-notice-text h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-bottom: 6px;
+    }
+
+    .spam-notice-text p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ─── Responsive ────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-stats {
+        gap: 20px;
+      }
+
+      .tech-strip {
+        gap: 20px;
+      }
+
+      .contact-form {
+        padding: 24px;
+      }
+    }
+
+    /* ─── Mobile menu ───────────────────────────────────── */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      gap: 20px;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--text);
+    }
+
+    .mobile-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .mobile-actions .theme-toggle,
+    .mobile-actions .lang-toggle {
+      width: auto;
+      min-width: 58px;
+      padding: 0 14px;
+    }
+
+    /* ─── Tech icon SVG sizing ──────────────────────────── */
+    .tech-icon svg {
+      width: 44px;
+      height: 44px;
+    }
+
+    /* ─── Projects ──────────────────────────────────────── */
+    #projects {
+      padding: 100px 0;
+      background: var(--bg-alt);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid #0F0F0F;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: .35s;
+      box-shadow: 0 2px 20px rgba(254, 208, 0, .07);
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 24px 56px rgba(254, 208, 0, .18);
+    }
+
+    /* ── Shared mockup shell ── */
+    .project-mockup {
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+      background: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(15, 15, 15, .08);
+    }
+
+    .project-mockup img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      padding: 0;
+      box-shadow: none;
+      transition: transform .4s ease;
+    }
+
+    .project-card:hover .project-mockup img {
+      transform: scale(1.015);
+    }
+
+    /* browser chrome */
+    .sc {
+      position: absolute;
+      inset: 14px 14px 0;
+      border-radius: 10px 10px 0 0;
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-bottom: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      font-family: 'SF Mono', 'Consolas', monospace;
+    }
+
+    .sc-bar {
+      height: 26px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .sc-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .sc-dot.r {
+      background: #ff5f57;
+    }
+
+    .sc-dot.y {
+      background: #febc2e;
+    }
+
+    .sc-dot.g {
+      background: #28c840;
+    }
+
+    .sc-urlbar {
+      flex: 1;
+      height: 11px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, .07);
+      margin-left: 6px;
+    }
+
+    /* app body split: sidebar + main */
+    .sc-body {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .sc-side {
+      width: 68px;
+      flex-shrink: 0;
+      border-right: 1px solid rgba(255, 255, 255, .05);
+      display: flex;
+      flex-direction: column;
+      padding: 8px 0;
+      gap: 1px;
+    }
+
+    .sc-nav {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 8px;
+      font-size: 7px;
+      color: rgba(255, 255, 255, .35);
+      letter-spacing: .3px;
+      border-radius: 4px;
+      margin: 0 4px;
+    }
+
+    .sc-nav.act {
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .sc-nav-icon {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .sc-content {
+      flex: 1;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow: hidden;
+    }
+
+    /* top row: page title + search + avatar */
+    .sc-header {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .sc-title {
+      font-size: 8px;
+      font-weight: 700;
+      color: #fff;
+      flex: 1;
+      letter-spacing: .2px;
+    }
+
+    .sc-search {
+      width: 56px;
+      height: 11px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .sc-avatar {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* kpi row */
+    .sc-kpis {
+      display: flex;
+      gap: 5px;
+    }
+
+    .sc-kpi {
+      flex: 1;
+      border-radius: 6px;
+      padding: 5px 5px 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      border: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .sc-kpi-val {
+      font-size: 9px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .sc-kpi-lbl {
+      font-size: 6px;
+      color: rgba(255, 255, 255, .4);
+      letter-spacing: .3px;
+    }
+
+    .sc-kpi-bar {
+      height: 2px;
+      border-radius: 1px;
+      margin-top: 2px;
+    }
+
+    /* data table */
+    .sc-table {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .sc-th {
+      display: flex;
+      gap: 3px;
+      padding: 3px 5px;
+      background: rgba(255, 255, 255, .05);
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+    }
+
+    .sc-th span {
+      font-size: 6px;
+      color: rgba(255, 255, 255, .4);
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      flex: 1;
+    }
+
+    .sc-tr {
+      display: flex;
+      gap: 3px;
+      padding: 3px 5px;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+    }
+
+    .sc-tr:last-child {
+      border-bottom: none;
+    }
+
+    .sc-td {
+      font-size: 7px;
+      color: rgba(255, 255, 255, .6);
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .sc-badge {
+      font-size: 5.5px;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .sc-badge.green {
+      background: rgba(34, 197, 94, .25);
+      color: #4ade80;
+    }
+
+    .sc-badge.orange {
+      background: rgba(251, 146, 60, .25);
+      color: #fb923c;
+    }
+
+    .sc-badge.red {
+      background: rgba(239, 68, 68, .25);
+      color: #f87171;
+    }
+
+    .sc-badge.blue {
+      background: rgba(56, 189, 248, .25);
+      color: #38bdf8;
+    }
+
+    .sc-badge.purple {
+      background: rgba(168, 85, 247, .25);
+      color: #c084fc;
+    }
+
+    /* mini bar chart */
+    .sc-chart {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      padding: 4px 5px;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, .06);
+      height: 48px;
+    }
+
+    .sc-col {
+      border-radius: 2px 2px 0 0;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* map-style grid */
+    .sc-map {
+      flex: 1;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, .06);
+      position: relative;
+      overflow: hidden;
+      padding: 5px;
+    }
+
+    .sc-map-node {
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6px;
+      font-weight: 700;
+    }
+
+    .sc-map-line {
+      position: absolute;
+      height: 1px;
+      background: rgba(255, 255, 255, .12);
+      transform-origin: left center;
+    }
+
+    /* phone chrome */
+    .sc-phone-wrap {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sc-phone {
+      width: 92px;
+      height: 196px;
+      border-radius: 18px;
+      border: 2.5px solid rgba(255, 255, 255, .2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      flex-shrink: 0;
+    }
+
+    .sc-phone-status {
+      height: 16px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 3px;
+    }
+
+    .sc-phone-notch {
+      width: 28px;
+      height: 8px;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .sc-phone-body {
+      flex: 1;
+      padding: 5px 5px 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow: hidden;
+      font-family: 'SF Mono', 'Consolas', monospace;
+    }
+
+    .sc-phone-topbar {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 1px;
+    }
+
+    .sc-phone-pagetitle {
+      font-size: 8px;
+      font-weight: 700;
+      color: #fff;
+      flex: 1;
+    }
+
+    .sc-phone-icon {
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .sc-phone-hero {
+      border-radius: 7px;
+      padding: 6px 7px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .sc-phone-hero-lbl {
+      font-size: 6px;
+      color: rgba(255, 255, 255, .6);
+    }
+
+    .sc-phone-hero-val {
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .sc-phone-hero-sub {
+      font-size: 6px;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .sc-phone-row {
+      display: flex;
+      gap: 4px;
+    }
+
+    .sc-phone-mini {
+      flex: 1;
+      border-radius: 5px;
+      padding: 5px 5px 4px;
+      border: 1px solid rgba(255, 255, 255, .07);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .sc-phone-mini-val {
+      font-size: 8px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .sc-phone-mini-lbl {
+      font-size: 5.5px;
+      color: rgba(255, 255, 255, .4);
+    }
+
+    .sc-phone-section-lbl {
+      font-size: 6.5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .sc-phone-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 5px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .05);
+    }
+
+    .sc-phone-item-icon {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    .sc-phone-item-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .sc-phone-item-name {
+      font-size: 7px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .sc-phone-item-sub {
+      font-size: 6px;
+      color: rgba(255, 255, 255, .4);
+    }
+
+    .sc-phone-tabs {
+      display: flex;
+      gap: 3px;
+    }
+
+    .sc-phone-tab {
+      flex: 1;
+      height: 13px;
+      border-radius: 4px;
+      display: grid;
+      place-items: center;
+      font-size: 6px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .4);
+      background: rgba(255, 255, 255, .04);
+    }
+
+    .sc-phone-tab.act {
+      color: #fff;
+    }
+
+    /* project info strip */
+    .project-info {
+      padding: 20px 22px 22px;
+    }
+
+    .proj-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .proj-head h3 {
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .proj-type {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 20px;
+      white-space: nowrap;
+      margin-top: 3px;
+    }
+
+    .project-info p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .project-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .project-tags {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .project-tag {
+      padding: 3px 9px;
+      border-radius: 50px;
+      font-size: 10.5px;
+      font-weight: 600;
+      background: rgba(254, 208, 0, .12);
+      color: var(--accent-dark);
+      border: 1px solid rgba(254, 208, 0, .25);
+    }
+
+    .proj-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      align-items: stretch;
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    .btn-discuss {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: 800;
+      background: #ffb400;
+      color: #000;
+      cursor: pointer;
+      border: 1px solid rgba(255, 180, 0, .55);
+      transition: all .25s;
+      text-decoration: none;
+      white-space: nowrap;
+      width: 100%;
+      min-height: 50px;
+    }
+
+    .btn-discuss svg,
+    .btn-gallery svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .btn-discuss:hover {
+      background: #e0a000;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(255, 180, 0, .35);
+    }
+
+    .btn-gallery {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: 800;
+      background: #FED000;
+      color: #0F0F0F;
+      cursor: pointer;
+      border: none;
+      transition: all .25s;
+      white-space: nowrap;
+      width: 100%;
+      min-height: 50px;
+    }
+
+    .btn-gallery:hover {
+      background: #e3bb00;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(254, 208, 0, .42);
+    }
+
+    /* ── Lightbox ── */
+    .lightbox-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, .88);
+      backdrop-filter: blur(6px);
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .lightbox-overlay.open {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .lightbox-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      max-width: 860px;
+      width: 100%;
+      margin: auto;
+      padding: 32px;
+      position: relative;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: var(--bg-alt);
+      color: var(--text);
+      font-size: 18px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: .2s;
+    }
+
+    .lightbox-close:hover {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+    }
+
+    .lightbox-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .lightbox-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .lightbox-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .lightbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .lightbox-grid img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 1.5px solid var(--border);
+      transition: .25s;
+      object-fit: contain;
+      background: #0a0a0a;
+      aspect-ratio: 4/3;
+    }
+
+    .lightbox-grid img:hover {
+      border-color: var(--accent);
+      transform: scale(1.02);
+    }
+
+    .lightbox-imgfull-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(0, 0, 0, .95);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-imgfull-overlay.open {
+      display: flex;
+    }
+
+    .lightbox-imgfull-overlay img {
+      max-width: 92vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+
+    .lightbox-imgfull-overlay .lightbox-close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .lightbox-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      background: #FED000;
+      color: #0F0F0F;
+      text-decoration: none;
+      transition: all .25s;
+    }
+
+    .lightbox-wa-btn:hover {
+      background: #e6bc00;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(254, 208, 0, .45);
+    }
+
+    @media (max-width: 680px) {
+      .lightbox-box {
+        padding: 20px;
+      }
+
+      .lightbox-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ─── Team ──────────────────────────────────────────── */
+    #team {
+      padding: 100px 0;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+      gap: 32px;
+      justify-content: center;
+    }
+
+    .team-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all .35s ease;
+      box-shadow: 0 2px 20px rgba(254, 208, 0, .07);
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 24px 56px rgba(254, 208, 0, .15);
+    }
+
+    .member-avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #0F0F0F;
+      font-size: 28px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      flex-shrink: 0;
+      box-shadow: 0 8px 28px rgba(254, 208, 0, .40);
+    }
+
+    .member-name {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .member-role {
+      font-size: 14px;
+      color: var(--accent-dark);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .member-bio {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 18px;
+    }
+
+    .member-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .member-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 11px 28px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      background: var(--accent);
+      color: #0F0F0F;
+      transition: all .3s;
+    }
+
+    .member-link:hover {
+      opacity: .88;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(254, 208, 0, .40);
+    }
+
+    html[dir="rtl"] .service-card,
+    html[dir="rtl"] .project-info,
+    html[dir="rtl"] .contact-info,
+    html[dir="rtl"] .contact-form,
+    html[dir="rtl"] .mobile-menu,
+    html[dir="rtl"] footer {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .contact-item,
+    html[dir="rtl"] .contact-pair {
+      flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .lightbox-close,
+    html[dir="rtl"] .lightbox-imgfull-overlay .lightbox-close {
+      right: auto;
+      left: 16px;
+    }
+
+    html[dir="rtl"] .lightbox-imgfull-overlay .lightbox-close {
+      left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ─── Nav ──────────────────────────────────────────────── -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <img src="logo/logo1.png" alt="AtlasDev" style="height:52px;width:auto;display:block;">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">المشاريع</a></li>
+        <li><a href="#process" data-i18n="nav.process">آلية العمل</a></li>
+        <li><a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a></li>
+        <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+        <!-- <li><a href="#team">Team</a></li> -->
+        <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي"
+          title="تبديل الوضع الليلي">🌙</button>
+        <button class="theme-toggle lang-toggle" id="langToggle"
+          aria-label="Switch to English" title="Switch to English">EN</button>
+
+        <a href="mailto:info@atlasdev.tech" class="btn btn-primary"
+          data-i18n="nav.contactCta">ابدأ التواصل</a>
+
+        <a id="navWhatsapp"
+          href="https://wa.me/971524859625?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9."
+          class="btn btn-whatsapp-header">
+          <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+              d="M16.03 5.3c-5.9 0-10.68 4.72-10.68 10.55 0 1.86.49 3.67 1.42 5.28L5.3 26.7l5.74-1.5a10.77 10.77 0 0 0 4.98 1.22h.01c5.89 0 10.67-4.73 10.67-10.56 0-2.82-1.1-5.46-3.12-7.45a10.75 10.75 0 0 0-7.55-3.1zm0 19.33h-.01a8.9 8.9 0 0 1-4.53-1.24l-.33-.19-3.4.89.91-3.31-.21-.34a8.73 8.73 0 0 1-1.35-4.6c0-4.83 3.98-8.77 8.91-8.77 2.38 0 4.61.92 6.29 2.58a8.67 8.67 0 0 1 2.61 6.18c0 4.83-3.99 8.8-8.89 8.8zm4.88-6.61c-.27-.13-1.61-.79-1.86-.88-.25-.09-.43-.13-.61.13-.18.26-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.13-1.13-.41-2.16-1.31-.8-.7-1.34-1.56-1.5-1.82-.16-.26-.02-.4.12-.53.12-.12.27-.31.4-.46.13-.15.18-.26.27-.44.09-.18.04-.33-.02-.46-.07-.13-.61-1.46-.84-2-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.95 2.56 1.09 2.74.13.18 1.86 2.97 4.52 4.16.63.27 1.12.43 1.51.55.63.2 1.2.17 1.65.1.5-.08 1.61-.66 1.84-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.31z" />
+          </svg>
+          <span data-i18n="nav.whatsapp">WhatsApp</span>
+        </a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services" onclick="toggleMenu()" data-i18n="nav.services">الخدمات</a>
+      <a href="#projects" onclick="toggleMenu()" data-i18n="nav.projects">المشاريع</a>
+      <a href="#process" onclick="toggleMenu()" data-i18n="nav.process">آلية العمل</a>
+      <a href="#testimonials" onclick="toggleMenu()" data-i18n="nav.testimonials">آراء العملاء</a>
+      <a href="#about" onclick="toggleMenu()" data-i18n="nav.about">من نحن</a>
+      <!-- <a href="#team"      onclick="toggleMenu()">Team</a> -->
+      <a href="#contact" onclick="toggleMenu()" data-i18n="nav.contact">تواصل معنا</a>
+      <div class="mobile-actions">
+        <button class="theme-toggle" id="mobileThemeToggle" aria-label="تبديل الوضع الليلي"
+          title="تبديل الوضع الليلي">🌙</button>
+        <button class="theme-toggle lang-toggle" id="mobileLangToggle" aria-label="Switch to English"
+          title="Switch to English">EN</button>
+
+        <a href="mailto:info@atlasdev.tech" class="btn btn-primary" style="text-align:center;"
+          data-i18n="nav.contactCta">ابدأ التواصل</a>
+        <a id="mobileWhatsapp"
+          href="https://wa.me/971524859625?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9."
+          class="btn btn-whatsapp-header" style="text-align:center;">
+          <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+              d="M16.03 5.3c-5.9 0-10.68 4.72-10.68 10.55 0 1.86.49 3.67 1.42 5.28L5.3 26.7l5.74-1.5a10.77 10.77 0 0 0 4.98 1.22h.01c5.89 0 10.67-4.73 10.67-10.56 0-2.82-1.1-5.46-3.12-7.45a10.75 10.75 0 0 0-7.55-3.1zm0 19.33h-.01a8.9 8.9 0 0 1-4.53-1.24l-.33-.19-3.4.89.91-3.31-.21-.34a8.73 8.73 0 0 1-1.35-4.6c0-4.83 3.98-8.77 8.91-8.77 2.38 0 4.61.92 6.29 2.58a8.67 8.67 0 0 1 2.61 6.18c0 4.83-3.99 8.8-8.89 8.8zm4.88-6.61c-.27-.13-1.61-.79-1.86-.88-.25-.09-.43-.13-.61.13-.18.26-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.13-1.13-.41-2.16-1.31-.8-.7-1.34-1.56-1.5-1.82-.16-.26-.02-.4.12-.53.12-.12.27-.31.4-.46.13-.15.18-.26.27-.44.09-.18.04-.33-.02-.46-.07-.13-.61-1.46-.84-2-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.95 2.56 1.09 2.74.13.18 1.86 2.97 4.52 4.16.63.27 1.12.43 1.51.55.63.2 1.2.17 1.65.1.5-.08 1.61-.66 1.84-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.31z" />
+          </svg>
+          <span data-i18n="nav.whatsapp">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ──────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            <span data-i18n="hero.badge">موثوق من شركات في الإمارات وسوريا 🤝</span>
+          </div>
+
+          <h1 data-i18n-html="hero.titleHtml">نبني <span class="gradient-text">أنظمة</span><br> رقمية قابلة للتوسع</h1>
+
+          <p class="hero-sub" data-i18n="hero.sub">تقدّم أطلس ديف حلول Laravel وVue وFlutter مخصصة للأعمال، مع تنفيذ
+            موثوق للشركات في الإمارات والعالم العربي.</p>
+
+          <div class="hero-buttons">
+            <a id="heroWhatsapp"
+              href="https://wa.me/971524859625?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A8%D8%AF%D8%A1%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9.%20%D8%B1%D8%AC%D8%A7%D8%A1%D9%8B%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D9%88%D8%A7%20%D9%85%D8%B9%D9%8A."
+              class="btn btn-whatsapp" data-i18n="hero.startProject">ابدأ مشروعك ↗</a>
+            <a href="#services" class="btn btn-outline" data-i18n="hero.viewServices">استعرض الخدمات</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num gradient-text">50+</div>
+              <div class="stat-label" data-i18n="hero.stats.projects">مشروع تم تسليمه</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num gradient-text">UAE/SY</div>
+              <div class="stat-label" data-i18n="hero.stats.regions">نعمل من الإمارات وسوريا</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num gradient-text">100%</div>
+              <div class="stat-label" data-i18n="hero.stats.satisfaction">رضا العملاء</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="code-line"><span class="ln">1</span><span class="cm">// AtlasDev – clean architecture</span>
+            </div>
+            <div class="code-line"><span class="ln">2</span><span class="kw">use</span> App\Services\<span
+                class="fn">OrderService</span>;</div>
+            <div class="code-line"><span class="ln">3</span></div>
+            <div class="code-line"><span class="ln">4</span><span class="kw">class</span> <span
+                class="fn">OrderController</span></div>
+            <div class="code-line"><span class="ln">5</span>{</div>
+            <div class="code-line"><span class="ln">6</span>&nbsp;&nbsp;<span class="kw">public function</span> <span
+                class="fn">store</span>(Request $req)</div>
+            <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;{</div>
+            <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span>
+              $this-><span class="fn">orderService</span></div>
+            <div class="code-line"><span class="ln">9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-><span
+                class="fn">create</span>($req-><span class="fn">validated</span>());</div>
+            <div class="code-line"><span class="ln">10</span>&nbsp;&nbsp;}</div>
+            <div class="code-line"><span class="ln">11</span>}</div>
+            <div style="margin-top:18px; display:flex; gap:8px;">
+              <span class="card-tag tag-laravel">Laravel</span>
+              <span class="card-tag tag-vue">Vue</span>
+              <span class="card-tag tag-flutter">Flutter</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-2" data-i18n="hero.delivery">✅ تسليم في الموعد</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Technologies ──────────────────────────────────────── -->
+  <section id="technologies">
+    <div class="container">
+      <div class="tech-strip">
+
+        <!-- Laravel -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(255,45,32,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 52">
+              <path fill="#FF2D20"
+                d="M49.626 11.564a.81.81 0 0 1 .028.21v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01a.814.814 0 0 1-.23.095l-.07.018a.716.716 0 0 1-.262 0l-.07-.018a.775.775 0 0 1-.23-.095L.48 39.944A.8.8 0 0 1 .08 39.25V6.334c0-.072.01-.142.028-.21l.023-.067.039-.089a.55.55 0 0 1 .054-.084l.033-.045a.827.827 0 0 1 .1-.1l.026-.02a.8.8 0 0 1 .12-.064L9.8.278a.8.8 0 0 1 .8 0l9.3 5.375a.84.84 0 0 1 .12.064l.025.02c.036.031.068.064.1.1l.033.045a.553.553 0 0 1 .054.084.57.57 0 0 1 .038.089l.023.067a.809.809 0 0 1 .028.21v21.427l8.007-4.615V11.773c0-.073.01-.143.028-.21l.024-.068.038-.088a.534.534 0 0 1 .054-.084l.034-.046a.816.816 0 0 1 .1-.099l.026-.02a.8.8 0 0 1 .12-.064l9.3-5.375a.8.8 0 0 1 .8 0l9.3 5.375a.8.8 0 0 1 .12.064l.025.02a.752.752 0 0 1 .1.1l.034.045a.547.547 0 0 1 .054.084.627.627 0 0 1 .038.089l.023.066zm-1.574 10.076V12.85l-3.363 1.94-4.645 2.675v8.79zm-9.209 15.878V28.72l-4.57 2.612-13.08 7.483v8.87zM1.674 7.056v31.383L20.1 48.636v-8.87l-9.204-5.256-.005-.003-.006-.003c-.031-.019-.063-.038-.094-.06l-.024-.017a.62.62 0 0 1-.08-.07l-.032-.033-.031-.046a.629.629 0 0 1-.043-.077l-.025-.058a.595.595 0 0 1-.025-.082l-.013-.058a.634.634 0 0 1-.01-.092l-.002-.042V13.828zm8.826-5.2L2.284 6.334l8.216 4.74 8.216-4.74zm4.6 26.905l4.645-2.674V7.056L15.94 8.996l-4.645 2.674v19.031zm9.209-20.97l-8.216 4.74 8.216 4.742 8.216-4.742zM35.307 10.4l-8.216 4.741 8.216 4.74 8.216-4.74zm-8.007 14.106l4.645-2.675 3.363-1.94v-8.79l-4.645 2.675-3.363 1.94z" />
+            </svg>
+          </div>
+          Laravel
+        </div>
+
+        <!-- Vue.js -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(65,184,131,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 221.685">
+              <path fill="#41B883" d="M204.8 0L128 133.387 51.2 0H0l128 221.685L256 0z" />
+              <path fill="#34495E" d="M204.8 0L128 133.387 51.2 0H25.6l102.4 177.348L230.4 0z" />
+            </svg>
+          </div>
+          Vue.js
+        </div>
+
+        <!-- Flutter -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(84,197,248,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#54C5F8" d="M14.314 0L2.3 12 6 15.7 21.684 0z" />
+              <path fill="#54C5F8" d="M14.328 11.072l-6.471 6.457 6.471 6.471H21L14.342 17.53l6.471-6.458z" />
+              <path fill="#01579B" d="M7.857 17.529l3.78 3.78-3.78 3.779L4.078 21.31z" />
+            </svg>
+          </div>
+          Flutter
+        </div>
+
+        <!-- SQL -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(68,121,161,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4479A1" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M3 5v4c0 1.657 4.03 3 9 3s9-1.343 9-3V5" />
+              <path d="M3 9v4c0 1.657 4.03 3 9 3s9-1.343 9-3V9" />
+              <path d="M3 13v4c0 1.657 4.03 3 9 3s9-1.343 9-3v-4" />
+            </svg>
+          </div>
+          <span data-i18n="tech.sql">SQL</span>
+        </div>
+
+        <!-- REST APIs -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(234,179,8,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>
+          </div>
+          <span data-i18n="tech.rest">واجهات REST</span>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(34,211,165,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#22d3a5" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+          </div>
+          <span data-i18n="tech.cloud">نشر سحابي</span>
+        </div>
+
+        <!-- Security -->
+        <div class="tech-item">
+          <div class="tech-icon" style="background:rgba(108,99,255,.1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <span data-i18n="tech.security">الأمان</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ────────────────────────────────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="projects.label">أعمالنا</span>
+        <h2 data-i18n-html="projects.titleHtml">أنظمة حقيقية <span class="gradient-text">نفذناها</span></h2>
+        <p class="section-desc" data-i18n="projects.desc">من أنظمة ERP إلى تطبيقات الجوال، هذه مجموعة من المنصات التي
+          صممناها وسلمناها بالكامل.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ═══ 1 · TableMaster ═══ -->
+        <div class="project-card" data-project="tablemaster">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/1-resturant/1.png" alt="TableMaster" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">TableMaster</h3>
+              <span class="proj-type" style="background:rgba(239,68,68,.12);color:#f87171">تطبيق مطاعم</span>
+            </div>
+            <p class="proj-summary">تطبيق لإدارة المطاعم يشمل حجوزات الطاولات، توجيه الطلبات للمطبخ مباشرة، نقطة بيع،
+              وتقارير الإيرادات اليومية.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('tablemaster')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 2 · 2BahasaKu ═══ -->
+        <div class="project-card" data-project="bahasaku">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/1.png" alt="BahasaKu"
+              class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">2BahasaKu</h3>
+              <span class="proj-type" style="background:rgba(168,85,247,.12);color:#c084fc">تعليم لغات</span>
+            </div>
+            <p class="proj-summary">منصة تعليم لغات محلية تفاعلية مع دروس منظمة واختبارات وتتبع تقدّم الدارسين بسهولة.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('bahasaku')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 3 · EduGame ═══ -->
+        <div class="project-card" data-project="edugame">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/3-Gamified-Learning-Platform/1.png" alt="EduGame" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">EduGame</h3>
+              <span class="proj-type" style="background:rgba(168,85,247,.12);color:#c084fc">تعليم تفاعلي</span>
+            </div>
+            <p class="proj-summary">منصة تعلم مدمجة بالتحفيز والألعاب مع اختبارات وإنجازات ولوحات صدارة وتتبع تقدّم لرفع
+              تفاعل الطلاب.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('edugame')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 4 · PharmaCare ═══ -->
+        <div class="project-card" data-project="pharmacy">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/7-Pharmacy/1.png" alt="PharmaCare" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">صيدليتي</h3>
+              <span class="proj-type" style="background:rgba(34,197,94,.12);color:#86efac">إدارة صيدلية</span>
+            </div>
+            <p class="proj-summary">نظام إدارة صيدلي متكامل لإدارة المخزون والمبيعات والعملاء والوصفات الطبية والتقارير المالية.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('pharmacy')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 6 · ShopNest ═══ -->
+        <div class="project-card" data-project="ShopNest">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/2-ecommerce/1.png" alt="ShopNest" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">ShopNest</h3>
+              <span class="proj-type" style="background:rgba(52,211,153,.12);color:#34d399">تجارة إلكترونية</span>
+            </div>
+            <p class="proj-summary">منصة تجارة إلكترونية متكاملة تشمل كتالوج منتجات، سلة شراء، دفع، ولوحة تحكم لإدارة
+              الطلبات والمخزون.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">Stripe</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('ShopNest')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 6 · RentFlow ═══ -->
+        <div class="project-card" data-project="rentflow">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/5-Rent-Management/1.png" alt="RentFlow" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">RentFlow</h3>
+              <span class="proj-type" style="background:rgba(251,146,60,.12);color:#fb923c">إدارة إيجارات</span>
+            </div>
+            <p class="proj-summary">نظام لإدارة العقارات والإيجارات مع متابعة المستأجرين والعقود والتحصيل والصيانة
+              والتقارير المالية.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('rentflow')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 7 · TransitHub ═══ -->
+        <div class="project-card" data-project="transithub">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/6-smart%20transport%20platform/1.png" alt="TransitHub" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">TransitHub</h3>
+              <span class="proj-type" style="background:rgba(56,189,248,.12);color:#38bdf8">نقل ذكي</span>
+            </div>
+            <p class="proj-summary">منصة نقل ذكي لإدارة الأساطيل والمسارات وتتبع السائقين ومراقبة الوقود وجدولة الصيانة.
+            </p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">Flutter</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('transithub')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 8 · EduCare ═══ -->
+        <div class="project-card" data-project="educare">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/8-school/1.png" alt="EduCare" class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">EduCare</h3>
+              <span class="proj-type" style="background:rgba(34,211,165,.12);color:#22d3a5">إدارة تعليم</span>
+            </div>
+            <p class="proj-summary">نظام إدارة مدارس يشمل سجلات الطلاب والحضور والدرجات والتواصل مع أولياء الأمور
+              والتقارير الأكاديمية.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('educare')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 9 · WareFlow ═══ -->
+        <div class="project-card" data-project="wareflow">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/9-Inventory-Management-System-/05 Dashboard.png" alt="WareFlow"
+              class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">WareFlow</h3>
+              <span class="proj-type" style="background:rgba(37,99,235,.12);color:#93c5fd">مخزون ومستودعات</span>
+            </div>
+            <p class="proj-summary">نظام متكامل لإدارة المخزون والمستودعات مع تتبع الأصول وتقارير GRN وتخصيص المواد ومسح
+              الباركود.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('wareflow')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ 10 · StaffHub ═══ -->
+        <div class="project-card" data-project="staffhub">
+          <div class="project-mockup">
+            <img src="lina-ahmad-ghojan/10-HR Management Dashboard (Community)/payroll.png" alt="StaffHub"
+              class="project-image">
+          </div>
+          <div class="project-info">
+            <div class="proj-head">
+              <h3 class="proj-title">StaffHub</h3>
+              <span class="proj-type" style="background:rgba(129,140,248,.12);color:#a5b4fc">موارد بشرية</span>
+            </div>
+            <p class="proj-summary">لوحة موارد بشرية لإدارة الحضور والرواتب والإجازات وتحليلات الأقسام.</p>
+            <div class="project-tags" style="margin-top:10px;">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <div class="proj-actions">
+              <a href="#" target="_blank" rel="noopener" class="btn-discuss project-discuss"
+                data-i18n="projects.actions.discuss">💬 ناقش الفكرة</a>
+              <button type="button" class="btn-gallery" onclick="openProjectLightbox('staffhub')">🖼 <span
+                  data-i18n="projects.actions.details">عرض التفاصيل</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- ─── Services ─────────────────────────────────────────── -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="services.label">خدماتنا</span>
+        <h2 data-i18n-html="services.titleHtml">كل ما تحتاجه <span class="gradient-text">للتوسع</span></h2>
+        <p class="section-desc" data-i18n="services.desc">من الأنظمة الإدارية الداخلية إلى تطبيقات الجوال، نحن نغطي كامل
+          الحل التقني.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(239,68,68,.1)">⚙️</div>
+          <h3 data-i18n="services.items.laravel.title">أنظمة Laravel مخصصة</h3>
+          <p data-i18n="services.items.laravel.desc">بنى خلفية قابلة للتوسع تشمل ERP ولوحات التحكم وCRM والبوابات
+            الداخلية، مبنية بهندسة Laravel نظيفة مع MySQL وPostgreSQL.</p>
+          <div class="service-tags">
+            <span class="service-tag">Laravel 11</span>
+            <span class="service-tag">REST API</span>
+            <span class="service-tag">MySQL</span>
+            <span class="service-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(52,211,153,.1)">🖥️</div>
+          <h3 data-i18n="services.items.vue.title">واجهات ويب بـ Vue.js</h3>
+          <p data-i18n="services.items.vue.desc">لوحات تحكم وواجهات إدارية حديثة وتفاعلية مبنية بـ Vue 3 وInertia أو
+            كتطبيقات SPA مستقلة باستخدام Tailwind CSS.</p>
+          <div class="service-tags">
+            <span class="service-tag">Vue 3</span>
+            <span class="service-tag">Inertia.js</span>
+            <span class="service-tag">Tailwind CSS</span>
+            <span class="service-tag">Pinia</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(56,189,248,.1)">📱</div>
+          <h3 data-i18n="services.items.flutter.title">تطبيقات Flutter للجوال</h3>
+          <p data-i18n="services.items.flutter.desc">تطبيقات iOS وAndroid بتجربة استخدام سلسة ودعم للعمل دون اتصال
+            وتكامل مباشر مع أنظمة Laravel الخلفية.</p>
+          <div class="service-tags">
+            <span class="service-tag">Flutter</span>
+            <span class="service-tag">Dart</span>
+            <span class="service-tag">iOS & Android</span>
+            <span class="service-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(108,99,255,.1)">🗄️</div>
+          <h3 data-i18n="services.items.database.title">هندسة قواعد البيانات وSQL</h3>
+          <p data-i18n="services.items.database.desc">تصميم قواعد البيانات وتحسين الاستعلامات والمهاجرات وبنية التقارير
+            بما يحافظ على السرعة والاعتمادية مع التوسع.</p>
+          <div class="service-tags">
+            <span class="service-tag">MySQL</span>
+            <span class="service-tag">PostgreSQL</span>
+            <span class="service-tag">Query Optimization</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(234,179,8,.1)">🔌</div>
+          <h3 data-i18n="services.items.api.title">واجهات API والتكاملات</h3>
+          <p data-i18n="services.items.api.desc">ربط أنظمتك مع بوابات الدفع وCRMs ومزودي الشحن وأي خدمة خارجية عبر REST
+            أو GraphQL.</p>
+          <div class="service-tags">
+            <span class="service-tag">REST</span>
+            <span class="service-tag">Webhooks</span>
+            <span class="service-tag">Payment APIs</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(34,211,165,.1)">🛠️</div>
+          <h3 data-i18n="services.items.support.title">صيانة ودعم مستمر</h3>
+          <p data-i18n="services.items.support.desc">دعم تقني متواصل ومراقبة أداء وإصلاحات وتحسينات تساعد أنظمتك على
+            العمل بأفضل شكل ممكن.</p>
+          <div class="service-tags">
+            <span class="service-tag">Monitoring</span>
+            <span class="service-tag">Bug Fixes</span>
+            <span class="service-tag">Updates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Process ───────────────────────────────────────────── -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="process.label">آلية العمل</span>
+        <h2 data-i18n-html="process.titleHtml">من الفكرة إلى <span class="gradient-text">منتج حي</span></h2>
+        <p class="section-desc" data-i18n="process.desc">عملية واضحة وتعاونية مصممة للإنجاز السريع والشفافية الكاملة.
+        </p>
+      </div>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3 data-i18n="process.steps.discovery.title">مكالمة استكشاف</h3>
+          <p data-i18n="process.steps.discovery.desc">نتعرف على أهدافك والمستخدمين والمتطلبات خلال مكالمة مركزة مدتها 30
+            دقيقة.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3 data-i18n="process.steps.proposal.title">عرض وحل معماري</h3>
+          <p data-i18n="process.steps.proposal.desc">نقدم عرضاً فنياً وجدولاً زمنياً ونطاقاً واضحاً للمشروع خلال 48
+            ساعة.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3 data-i18n="process.steps.build.title">تنفيذ على دفعات</h3>
+          <p data-i18n="process.steps.build.desc">ننفذ على دفعات قصيرة مع عروض دورية وتحديثات مستمرة دون مفاجآت.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3 data-i18n="process.steps.delivery.title">اختبار وتسليم</h3>
+          <p data-i18n="process.steps.delivery.desc">اختبارات شاملة ونشر على خادمك أو السحابة مع توثيق كامل للتسليم.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── About ─────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="about-label" data-i18n="about.label">عن أطلس ديف</div>
+          <h2 data-i18n-html="about.titleHtml">فريق موثوق صُمم من أجل <span class="gradient-text">الإنجاز</span></h2>
+          <p data-i18n="about.p1">أطلس ديف فريق هندسة برمجيات متخصص يعمل من الإمارات وسوريا، ونركز على بناء أنظمة أعمال
+            مخصصة تكون نظيفة وقابلة للتوسع وسهلة الصيانة.</p>
+          <p data-i18n="about.p2">نتقن العربية والإنجليزية، ما يجعلنا مناسبين طبيعياً للشركات في العالم العربي وخارجه.
+            عملاؤنا يثقون بنا لأننا نلتزم بالتسليم في الوقت والجودة كل مرة.</p>
+          <div class="about-pills">
+            <span class="pill" data-i18n="about.pills.uae">🇦🇪 في الإمارات</span>
+            <span class="pill" data-i18n="about.pills.syria">🇸🇾 في سوريا</span>
+            <span class="pill" data-i18n="about.pills.lang">🤝 العربية والإنجليزية</span>
+            <span class="pill" data-i18n="about.pills.fast">⚡ تنفيذ سريع</span>
+            <span class="pill" data-i18n="about.pills.trusted">🔒 شركاء موثوقون</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Testimonials ────────────────────────────────────── -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="testimonials.label">آراء العملاء</span>
+        <h2 data-i18n-html="testimonials.titleHtml">شهادات حقيقية من <span class="gradient-text">عملائنا</span></h2>
+        <p class="section-desc" data-i18n="testimonials.desc">نماذج تقييم حقيقية على مشاريعنا البرمجية من تطبيقات
+          تعليمية ومتاجر إلكترونية وأنظمة ERP.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="testimonials.items.1.quote">فريق أطلس ديف نفذ لنا منصة تعليمية كاملة
+            تشمل إدارة الدروس والاختبارات والتقارير. الالتزام بالوقت كان ممتاز، والأهم أن الفريق كان مرن جداً في
+            التعديلات خلال التطوير.</p>
+          <div class="testimonial-author" data-i18n="testimonials.items.1.author">مدير أكاديمية خاصة</div>
+          <div class="testimonial-role" data-i18n="testimonials.items.1.role">منصة تعليم إلكتروني</div>
+          <div class="testimonial-metrics">
+            <span class="testimonial-chip" data-i18n="testimonials.items.1.metric1">الإمارات</span>
+            <span class="testimonial-chip" data-i18n="testimonials.items.1.metric2">2026-04-02</span>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="testimonials.items.2.quote">طلبنا تطبيق أطفال تعليمي بسيط وسريع، لكن
+            النتيجة كانت أفضل من المتوقع. تصميم واضح للأطفال، أداء ممتاز، ولوحة تحكم سهلة لإضافة المحتوى.</p>
+          <div class="testimonial-author" data-i18n="testimonials.items.2.author">مؤسسة تعليم طفولة مبكرة</div>
+          <div class="testimonial-role" data-i18n="testimonials.items.2.role">تطبيق أطفال تعليمي</div>
+          <div class="testimonial-metrics">
+            <span class="testimonial-chip" data-i18n="testimonials.items.2.metric1">السعودية</span>
+            <span class="testimonial-chip" data-i18n="testimonials.items.2.metric2">2026-04-02</span>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="testimonials.items.3.quote">المتجر الإلكتروني اشتغل معنا من أول إطلاق
+            بشكل ممتاز. ربط الدفع والشحن وإدارة الطلبات تم بسلاسة، والدعم بعد التسليم كان احترافي وسريع.</p>
+          <div class="testimonial-author" data-i18n="testimonials.items.3.author">مالك متجر إلكتروني</div>
+          <div class="testimonial-role" data-i18n="testimonials.items.3.role">E-Commerce Store</div>
+          <div class="testimonial-metrics">
+            <span class="testimonial-chip" data-i18n="testimonials.items.3.metric1">الإمارات</span>
+            <span class="testimonial-chip" data-i18n="testimonials.items.3.metric2">2026-03-28</span>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="testimonials.items.4.quote">نظام ERP غيّر طريقة شغل الفريق بالكامل. كل
+            الأقسام صارت تعمل على نفس البيانات، والتقارير صارت جاهزة فورياً بدل الشغل اليدوي المتعب.</p>
+          <div class="testimonial-author" data-i18n="testimonials.items.4.author">مدير تشغيل</div>
+          <div class="testimonial-role" data-i18n="testimonials.items.4.role">ERP مخصص للشركة</div>
+          <div class="testimonial-metrics">
+            <span class="testimonial-chip" data-i18n="testimonials.items.4.metric1">قطر</span>
+            <span class="testimonial-chip" data-i18n="testimonials.items.4.metric2">2026-02-19</span>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote" data-i18n="testimonials.items.5.quote">طلبنا Dashboard لإدارة المبيعات والمخزون
+            وربط الفروع، والنتيجة كانت ممتازة. واجهة سهلة، بيانات دقيقة، وفريق أطلس ديف كان متابع معنا حتى بعد الإطلاق.
+          </p>
+          <div class="testimonial-author" data-i18n="testimonials.items.5.author">صاحب سلسلة متاجر</div>
+          <div class="testimonial-role" data-i18n="testimonials.items.5.role">Sales & Inventory Dashboard</div>
+          <div class="testimonial-metrics">
+            <span class="testimonial-chip" data-i18n="testimonials.items.5.metric1">الكويت</span>
+            <span class="testimonial-chip" data-i18n="testimonials.items.5.metric2">2026-01-30</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Team ──────────────────────────────────────────────── -->
+  <template id="team-disabled">
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Team</span>
+          <h2>The People Behind <span class="gradient-text">AtlasDev</span></h2>
+          <p class="section-desc">Experienced engineers who take ownership from first commit to final deployment.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="member-avatar">LG</div>
+            <h3 class="member-name">Lina Ahmad Ghojan</h3>
+            <p class="member-role">Full-Stack Software Engineer</p>
+            <p class="member-bio">
+              Laravel &amp; Vue.js developer with 4+ years of experience designing and delivering ERP systems,
+              business dashboards, and API integrations. 10 ERP modules shipped for enterprise clients,
+              8 personal projects — clean code and measurable impact every time.
+            </p>
+            <div class="member-skills">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">ERP Systems</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">REST API</span>
+            </div>
+            <a href="lina-ahmad-ghojan/index.html" class="member-link" target="_blank" rel="noreferrer">
+              View Portfolio ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <!-- ─── Contact ───────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="contact.label">تواصل معنا</span>
+        <h2 data-i18n-html="contact.titleHtml">لنصنع شيئاً <span class="gradient-text">معاً</span></h2>
+        <p class="section-desc" data-i18n="contact.desc">أخبرنا عن مشروعك وسنعود إليك خلال 24 ساعة.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2 data-i18n="contact.introTitle">ابدأ الحوار</h2>
+          <p data-i18n="contact.introDesc">سواء كان لديك تصور واضح أو مجرد فكرة أولية، يسعدنا أن نتحدث معك ونساعدك في
+            تحديد الحل المناسب.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-dot">📧</div>
+              <a href="mailto:info@atlasdev.tech">info@atlasdev.tech</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-dot">📞</div>
+              <span class="contact-pair">
+                <a id="uaeWhatsapp"
+                  href="https://wa.me/971524859625?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA."
+                  target="_blank" rel="noreferrer">+971 52 485 9625</a>
+                <span class="contact-slash">/</span>
+                <a id="syriaWhatsapp"
+                  href="https://wa.me/963995019487?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20AtlasDev%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85%20%D9%85%D9%86%20%D8%B3%D9%88%D8%B1%D9%8A%D8%A7."
+                  target="_blank" rel="noreferrer">+963 995 019 487</a>
+              </span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-dot">⏱️</div>
+              <span data-i18n="contact.replyTime">نرد خلال 24 ساعة، وغالباً أسرع من ذلك</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-dot">💬</div>
+              <span data-i18n="contact.bilingual">العربية والإنجليزية، وكلاهما مناسب تماماً</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-i18n="form.name">الاسم الكامل</label>
+                <input type="text" id="name" placeholder="أحمد حسن" data-i18n-placeholder="form.namePlaceholder"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="form.email">البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="you@company.com"
+                  data-i18n-placeholder="form.emailPlaceholder" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service" data-i18n="form.service">الخدمة المطلوبة</label>
+              <select id="service">
+                <option value="" data-i18n="form.servicePlaceholder">اختر الخدمة...</option>
+                <option data-i18n="form.options.laravel">نظام Laravel / باك إند</option>
+                <option data-i18n="form.options.vue">واجهة Vue.js / لوحة تحكم</option>
+                <option data-i18n="form.options.flutter">تطبيق Flutter للجوال</option>
+                <option data-i18n="form.options.database">تصميم قواعد البيانات وSQL</option>
+                <option data-i18n="form.options.api">تكامل API</option>
+                <option data-i18n="form.options.fullstack">مشروع متكامل Full-Stack</option>
+                <option data-i18n="form.options.support">صيانة ودعم</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-i18n="form.message">أخبرنا عن مشروعك</label>
+              <textarea id="message" placeholder="اشرح لنا باختصار ما الذي تريد بناءه وما الذي تحتاجه..."
+                data-i18n-placeholder="form.messagePlaceholder" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp form-submit" data-i18n="form.submit">أرسل الرسالة ↗</button>
+
+            <p id="form-msg"
+              style="text-align:center;margin-top:14px;font-size:13px;display:none;color:var(--accent-dark);">
+              ✅ تم إرسال الرسالة، وسنرد خلال 24 ساعة.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Project Lightbox ─────────────────────────────────── -->
+  <div class="lightbox-overlay" id="projectLightbox" onclick="closeLightboxOnBg(event)">
+    <div class="lightbox-box">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <div id="lb-type"
+        style="font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">
+      </div>
+      <div class="lightbox-title" id="lb-title"></div>
+      <div class="lightbox-desc" id="lb-desc"></div>
+      <div class="lightbox-tags" id="lb-tags"></div>
+      <div class="lightbox-grid" id="lb-grid"></div>
+      <a id="lb-wa" href="#" target="_blank" rel="noopener" class="lightbox-wa-btn" data-i18n="projects.lightboxCta">💬
+        ناقش هذا المشروع عبر واتساب</a>
+    </div>
+  </div>
+
+  <!-- Full-size image viewer -->
+  <div class="lightbox-imgfull-overlay" id="imgFullOverlay" onclick="closeImgFull()">
+    <button class="lightbox-close" onclick="closeImgFull()">✕</button>
+    <img id="imgFullSrc" src="" alt="">
+  </div>
+
+  <!-- ─── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-copy" data-i18n="footer.copy">© 2026 AtlasDev. هندسة برمجيات موثوقة · الإمارات وسوريا</div>
+      <div class="footer-links">
+        <a href="#services" data-i18n="footer.services">الخدمات</a>
+        <a href="#process" data-i18n="footer.process">العملية</a>
+        <a href="#about" data-i18n="footer.about">من نحن</a>
+        <!-- <a href="#team">Team</a> -->
+        <a href="mailto:info@atlasdev.tech">info@atlasdev.tech</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ─── Theme Toggle ───────────────────────────────────────
+    const SITE_URL = 'https://atlasdev.tech';
+    const html = document.documentElement;
+    const toggleBtn = document.getElementById('themeToggle');
+    const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+    const langToggle = document.getElementById('langToggle');
+    const mobileLangToggle = document.getElementById('mobileLangToggle');
+    const metaDescription = document.getElementById('meta-description');
+    const canonicalLink = document.getElementById('canonical-link');
+    const alternateAr = document.getElementById('alternate-ar');
+    const alternateEn = document.getElementById('alternate-en');
+    const alternateDefault = document.getElementById('alternate-x-default');
+    const metaOgTitle = document.getElementById('meta-og-title');
+    const metaOgDescription = document.getElementById('meta-og-description');
+    const metaOgUrl = document.getElementById('meta-og-url');
+    const metaOgLocale = document.getElementById('meta-og-locale');
+    const metaTwitterTitle = document.getElementById('meta-twitter-title');
+    const metaTwitterDescription = document.getElementById('meta-twitter-description');
+    const schemaNode = document.getElementById('atlasdev-schema');
+    const searchParams = new URLSearchParams(window.location.search);
+    const saved = localStorage.getItem('atlas-theme') || 'light';
+    html.setAttribute('data-theme', saved);
+    const translations = {
+      ar: {
+        meta: {
+          title: 'أطلس ديف - هندسة برمجيات موثوقة',
+          description: 'أطلس ديف - هندسة برمجيات موثوقة. نبني حلول Laravel وVue وFlutter مخصصة للشركات في العالم العربي وخارجه.'
+        },
+        nav: {
+          services: 'الخدمات',
+          projects: 'المشاريع',
+          process: 'آلية العمل',
+          testimonials: 'آراء العملاء',
+          about: 'من نحن',
+          contact: 'تواصل معنا',
+          whatsapp: 'WhatsApp',
+          contactCta: 'ابدأ التواصل'
+        },
+        hero: {
+          badge: 'موثوق من شركات في الإمارات وسوريا 🤝',
+          titleHtml: 'نبني <span class="gradient-text">أنظمة</span><br> رقمية قابلة للتوسع',
+          sub: 'تقدّم أطلس ديف حلول Laravel وVue وFlutter مخصصة للأعمال، مع تنفيذ موثوق للشركات في الإمارات والعالم العربي.',
+          startProject: 'ابدأ مشروعك ↗',
+          viewServices: 'استعرض الخدمات',
+          stats: {
+            projects: 'مشروع تم تسليمه',
+            regions: 'نعمل من الإمارات وسوريا',
+            satisfaction: 'رضا العملاء'
+          },
+          delivery: '✅ تسليم في الموعد'
+        },
+        projects: {
+          label: 'أعمالنا',
+          titleHtml: 'أنظمة حقيقية <span class="gradient-text">نفذناها</span>',
+          desc: 'من أنظمة ERP إلى تطبيقات الجوال، هذه مجموعة من المنصات التي صممناها وسلمناها بالكامل.',
+          actions: {
+            discuss: 'ناقش الفكرة',
+            details: 'عرض التفاصيل'
+          },
+          lightboxCta: 'ناقش هذا المشروع عبر واتساب'
+        },
+        tech: {
+          sql: 'SQL',
+          rest: 'واجهات REST',
+          cloud: 'نشر سحابي',
+          security: 'الأمان'
+        },
+        services: {
+          label: 'خدماتنا',
+          titleHtml: 'كل ما تحتاجه <span class="gradient-text">للتوسع</span>',
+          desc: 'من الأنظمة الإدارية الداخلية إلى تطبيقات الجوال، نحن نغطي كامل الحل التقني.',
+          items: {
+            laravel: {
+              title: 'أنظمة Laravel مخصصة',
+              desc: 'بنى خلفية قابلة للتوسع تشمل ERP ولوحات التحكم وCRM والبوابات الداخلية، مبنية بهندسة Laravel نظيفة مع MySQL وPostgreSQL.'
+            },
+            vue: {
+              title: 'واجهات ويب بـ Vue.js',
+              desc: 'لوحات تحكم وواجهات إدارية حديثة وتفاعلية مبنية بـ Vue 3 وInertia أو كتطبيقات SPA مستقلة باستخدام Tailwind CSS.'
+            },
+            flutter: {
+              title: 'تطبيقات Flutter للجوال',
+              desc: 'تطبيقات iOS وAndroid بتجربة استخدام سلسة ودعم للعمل دون اتصال وتكامل مباشر مع أنظمة Laravel الخلفية.'
+            },
+            database: {
+              title: 'هندسة قواعد البيانات وSQL',
+              desc: 'تصميم قواعد البيانات وتحسين الاستعلامات والمهاجرات وبنية التقارير بما يحافظ على السرعة والاعتمادية مع التوسع.'
+            },
+            api: {
+              title: 'واجهات API والتكاملات',
+              desc: 'ربط أنظمتك مع بوابات الدفع وCRMs ومزودي الشحن وأي خدمة خارجية عبر REST أو GraphQL.'
+            },
+            support: {
+              title: 'صيانة ودعم مستمر',
+              desc: 'دعم تقني متواصل ومراقبة أداء وإصلاحات وتحسينات تساعد أنظمتك على العمل بأفضل شكل ممكن.'
+            }
+          }
+        },
+        process: {
+          label: 'آلية العمل',
+          titleHtml: 'من الفكرة إلى <span class="gradient-text">منتج حي</span>',
+          desc: 'عملية واضحة وتعاونية مصممة للإنجاز السريع والشفافية الكاملة.',
+          steps: {
+            discovery: {
+              title: 'مكالمة استكشاف',
+              desc: 'نتعرف على أهدافك والمستخدمين والمتطلبات خلال مكالمة مركزة مدتها 30 دقيقة.'
+            },
+            proposal: {
+              title: 'عرض وحل معماري',
+              desc: 'نقدم عرضاً فنياً وجدولاً زمنياً ونطاقاً واضحاً للمشروع خلال 48 ساعة.'
+            },
+            build: {
+              title: 'تنفيذ على دفعات',
+              desc: 'ننفذ على دفعات قصيرة مع عروض دورية وتحديثات مستمرة دون مفاجآت.'
+            },
+            delivery: {
+              title: 'اختبار وتسليم',
+              desc: 'اختبارات شاملة ونشر على خادمك أو السحابة مع توثيق كامل للتسليم.'
+            }
+          }
+        },
+        about: {
+          label: 'عن أطلس ديف',
+          titleHtml: 'فريق موثوق صُمم من أجل <span class="gradient-text">الإنجاز</span>',
+          p1: 'أطلس ديف فريق هندسة برمجيات متخصص يعمل من الإمارات وسوريا، ونركز على بناء أنظمة أعمال مخصصة تكون نظيفة وقابلة للتوسع وسهلة الصيانة.',
+          p2: 'نتقن العربية والإنجليزية، ما يجعلنا مناسبين طبيعياً للشركات في العالم العربي وخارجه. عملاؤنا يثقون بنا لأننا نلتزم بالتسليم في الوقت والجودة كل مرة.',
+          pills: {
+            uae: '🇦🇪 في الإمارات',
+            syria: '🇸🇾 في سوريا',
+            lang: '🤝 العربية والإنجليزية',
+            fast: '⚡ تنفيذ سريع',
+            trusted: '🔒 شركاء موثوقون'
+          }
+        },
+        testimonials: {
+          label: 'آراء العملاء',
+          titleHtml: 'شهادات حقيقية من <span class="gradient-text">عملائنا</span>',
+          desc: 'نماذج تقييم حقيقية على مشاريعنا البرمجية من تطبيقات تعليمية ومتاجر إلكترونية وأنظمة ERP.',
+          items: {
+            1: {
+              quote: 'فريق أطلس ديف نفذ لنا منصة تعليمية كاملة تشمل إدارة الدروس والاختبارات والتقارير. الالتزام بالوقت كان ممتاز، والأهم أن الفريق كان مرن جداً في التعديلات خلال التطوير.',
+              author: 'مدير أكاديمية خاصة',
+              role: 'منصة تعليم إلكتروني',
+              metric1: 'الإمارات',
+              metric2: '2026-04-02'
+            },
+            2: {
+              quote: 'طلبنا تطبيق أطفال تعليمي بسيط وسريع، لكن النتيجة كانت أفضل من المتوقع. تصميم واضح للأطفال، أداء ممتاز، ولوحة تحكم سهلة لإضافة المحتوى.',
+              author: 'مؤسسة تعليم طفولة مبكرة',
+              role: 'تطبيق أطفال تعليمي',
+              metric1: 'السعودية',
+              metric2: '2026-04-02'
+            },
+            3: {
+              quote: 'المتجر الإلكتروني اشتغل معنا من أول إطلاق بشكل ممتاز. ربط الدفع والشحن وإدارة الطلبات تم بسلاسة، والدعم بعد التسليم كان احترافي وسريع.',
+              author: 'مالك متجر إلكتروني',
+              role: 'E-Commerce Store',
+              metric1: 'الإمارات',
+              metric2: '2026-03-28'
+            },
+            4: {
+              quote: 'نظام ERP غيّر طريقة شغل الفريق بالكامل. كل الأقسام صارت تعمل على نفس البيانات، والتقارير صارت جاهزة فورياً بدل الشغل اليدوي المتعب.',
+              author: 'مدير تشغيل',
+              role: 'ERP مخصص للشركة',
+              metric1: 'قطر',
+              metric2: '2026-02-19'
+            },
+            5: {
+              quote: 'طلبنا Dashboard لإدارة المبيعات والمخزون وربط الفروع، والنتيجة كانت ممتازة. واجهة سهلة، بيانات دقيقة، وفريق أطلس ديف كان متابع معنا حتى بعد الإطلاق.',
+              author: 'صاحب سلسلة متاجر',
+              role: 'Sales & Inventory Dashboard',
+              metric1: 'الكويت',
+              metric2: '2026-01-30'
+            }
+          }
+        },
+        contact: {
+          label: 'تواصل معنا',
+          titleHtml: 'لنصنع شيئاً <span class="gradient-text">معاً</span>',
+          desc: 'أخبرنا عن مشروعك وسنعود إليك خلال 24 ساعة.',
+          introTitle: 'ابدأ الحوار',
+          introDesc: 'سواء كان لديك تصور واضح أو مجرد فكرة أولية، يسعدنا أن نتحدث معك ونساعدك في تحديد الحل المناسب.',
+          replyTime: 'نرد خلال 24 ساعة، وغالباً أسرع من ذلك',
+          bilingual: 'العربية والإنجليزية، وكلاهما مناسب تماماً'
+        },
+        form: {
+          name: 'الاسم الكامل',
+          namePlaceholder: 'أحمد حسن',
+          email: 'البريد الإلكتروني',
+          emailPlaceholder: 'you@company.com',
+          service: 'الخدمة المطلوبة',
+          servicePlaceholder: 'اختر الخدمة...',
+          options: {
+            laravel: 'نظام Laravel / باك إند',
+            vue: 'واجهة Vue.js / لوحة تحكم',
+            flutter: 'تطبيق Flutter للجوال',
+            database: 'تصميم قواعد البيانات وSQL',
+            api: 'تكامل API',
+            fullstack: 'مشروع متكامل Full-Stack',
+            support: 'صيانة ودعم'
+          },
+          message: 'أخبرنا عن مشروعك',
+          messagePlaceholder: 'اشرح لنا باختصار ما الذي تريد بناءه وما الذي تحتاجه...',
+          submit: 'أرسل الرسالة ↗',
+          success: '✅ تم إرسال الرسالة، وسنرد خلال 24 ساعة.',
+          opening: '✅ جارٍ فتح واتساب...',
+          error: '❌ يرجى تعبئة جميع الحقول المطلوبة.'
+        },
+        footer: {
+          copy: '© 2026 AtlasDev. هندسة برمجيات موثوقة · الإمارات وسوريا',
+          services: 'الخدمات',
+          process: 'العملية',
+          about: 'من نحن'
+        },
+        toggles: {
+          switchLanguageLabel: 'Switch to English',
+          switchLanguageText: 'EN',
+          themeLabel: 'تبديل الوضع الليلي'
+        }
+      },
+      en: {
+        meta: {
+          title: 'AtlasDev - Trusted Software Engineering',
+          description: 'AtlasDev - Trusted Software Engineering. We build custom Laravel, Vue, and Flutter solutions for businesses across the Arab world and beyond.'
+        },
+        nav: {
+          services: 'Services',
+          projects: 'Projects',
+          process: 'How It Works',
+          testimonials: 'Testimonials',
+          about: 'About',
+          contact: 'Contact',
+          whatsapp: 'WhatsApp',
+          contactCta: 'Get In Touch'
+        },
+        hero: {
+          badge: 'Trusted by Businesses in UAE & Syria 🤝',
+          titleHtml: 'We Build <span class="gradient-text">Scalable</span><br> Digital Systems',
+          sub: 'AtlasDev delivers custom Laravel back-ends, Vue front-ends, and Flutter mobile apps - trusted by businesses across the UAE and the Arab world.',
+          startProject: 'Start a Project ↗',
+          viewServices: 'View Services',
+          stats: {
+            projects: 'Projects Delivered',
+            regions: 'UAE & Syria Based',
+            satisfaction: 'Client Satisfaction'
+          },
+          delivery: '✅ On-Time Delivery'
+        },
+        projects: {
+          label: 'Our Work',
+          titleHtml: 'Real Systems We\'ve <span class="gradient-text">Built</span>',
+          desc: 'From ERP to mobile apps - a selection of platforms we designed and delivered end-to-end.',
+          actions: {
+            discuss: 'Discuss Idea',
+            details: 'View Details'
+          },
+          lightboxCta: 'Discuss This Project on WhatsApp'
+        },
+        tech: {
+          sql: 'SQL',
+          rest: 'REST APIs',
+          cloud: 'Cloud Deploy',
+          security: 'Security'
+        },
+        services: {
+          label: 'Our Services',
+          titleHtml: 'Everything You Need to <span class="gradient-text">Scale</span>',
+          desc: 'From internal admin systems to consumer mobile apps - we cover the full stack.',
+          items: {
+            laravel: {
+              title: 'Custom Laravel Systems',
+              desc: 'Scalable back-end architectures - ERP, dashboards, CRM, and internal portals built with clean Laravel architecture and MySQL/PostgreSQL.'
+            },
+            vue: {
+              title: 'Vue.js Web Front-Ends',
+              desc: 'Reactive, modern UI dashboards and admin panels built with Vue 3 + Inertia or standalone SPAs with Tailwind CSS.'
+            },
+            flutter: {
+              title: 'Flutter Mobile Apps',
+              desc: 'Cross-platform iOS & Android apps with smooth UX, offline support, and seamless integration with your Laravel back-end.'
+            },
+            database: {
+              title: 'Database & SQL Architecture',
+              desc: 'Database design, query optimization, migrations, and reporting infrastructure that keeps your data fast and reliable at scale.'
+            },
+            api: {
+              title: 'API & Integrations',
+              desc: 'Third-party integration with payment gateways, CRMs, shipping providers, and any external service via REST or GraphQL APIs.'
+            },
+            support: {
+              title: 'Maintenance & Support',
+              desc: 'Ongoing technical support, performance monitoring, bug fixes, and feature improvements to keep your systems running at their best.'
+            }
+          }
+        },
+        process: {
+          label: 'How It Works',
+          titleHtml: 'From Idea to <span class="gradient-text">Live Product</span>',
+          desc: 'A clear, collaborative process built for fast delivery and full transparency.',
+          steps: {
+            discovery: {
+              title: 'Discovery Call',
+              desc: 'We learn about your goals, users, and requirements in a focused 30-minute call.'
+            },
+            proposal: {
+              title: 'Proposal & Architecture',
+              desc: 'We deliver a technical proposal, timeline, and clear project scope within 48 hours.'
+            },
+            build: {
+              title: 'Iterative Build',
+              desc: 'We build in short sprints with regular demos and updates - no surprises.'
+            },
+            delivery: {
+              title: 'QA & Delivery',
+              desc: 'Thorough testing, deployment to your server or cloud, and full handover documentation.'
+            }
+          }
+        },
+        about: {
+          label: 'About AtlasDev',
+          titleHtml: 'A Trusted Team Built to <span class="gradient-text">Deliver</span>',
+          p1: 'AtlasDev is a focused software engineering team based in UAE and Syria. We specialise in building custom business systems - clean, scalable, and maintainable.',
+          p2: 'We are fluent in Arabic and English, making us a natural fit for businesses across the Arab world and beyond. Our clients trust us to deliver on time, every time.',
+          pills: {
+            uae: '🇦🇪 UAE Based',
+            syria: '🇸🇾 Syria Based',
+            lang: '🤝 Arabic & English',
+            fast: '⚡ Fast Delivery',
+            trusted: '🔒 Trusted Partners'
+          }
+        },
+        testimonials: {
+          label: 'Testimonials',
+          titleHtml: 'Real Feedback from <span class="gradient-text">Our Clients</span>',
+          desc: 'Five real review models from software projects: e-learning, kids apps, e-commerce, ERP, and dashboards.',
+          items: {
+            1: {
+              quote: 'AtlasDev delivered a full learning platform for us including course management, assessments, and reporting. Delivery was on time and the team handled change requests smoothly.',
+              author: 'Private Academy Manager',
+              role: 'E-Learning Platform',
+              metric1: 'UAE',
+              metric2: '2026-04-02'
+            },
+            2: {
+              quote: 'We asked for a simple educational kids app, and the result exceeded expectations. Clean kid-friendly UI, strong performance, and an easy content management panel.',
+              author: 'Early Education Center',
+              role: 'Kids Learning App',
+              metric1: 'Saudi Arabia',
+              metric2: '2026-04-02'
+            },
+            3: {
+              quote: 'Our e-commerce store launched smoothly. Payments, shipping, and order management were integrated cleanly, and post-launch support has been fast and reliable.',
+              author: 'Online Store Owner',
+              role: 'E-Commerce Store',
+              metric1: 'UAE',
+              metric2: '2026-03-28'
+            },
+            4: {
+              quote: 'The custom ERP transformed our operations. Departments now work on the same data and reports are instant instead of manual.',
+              author: 'Operations Manager',
+              role: 'Custom ERP System',
+              metric1: 'Qatar',
+              metric2: '2026-02-19'
+            },
+            5: {
+              quote: 'We requested a sales and inventory dashboard across branches and the result was excellent. Easy UI, accurate data, and great follow-up after go-live.',
+              author: 'Retail Chain Owner',
+              role: 'Sales & Inventory Dashboard',
+              metric1: 'Kuwait',
+              metric2: '2026-01-30'
+            }
+          }
+        },
+        contact: {
+          label: 'Get In Touch',
+          titleHtml: 'Let\'s Build Something <span class="gradient-text">Together</span>',
+          desc: 'Tell us about your project and we\'ll get back to you within 24 hours.',
+          introTitle: 'Start the Conversation',
+          introDesc: 'Whether you have a clear brief or just an idea, we\'re happy to chat and help you define the right solution.',
+          replyTime: 'We reply within 24 hours, usually much sooner',
+          bilingual: 'Arabic & English - both work perfectly fine'
+        },
+        form: {
+          name: 'Full Name',
+          namePlaceholder: 'Ahmed Hassan',
+          email: 'Email Address',
+          emailPlaceholder: 'you@company.com',
+          service: 'Service Needed',
+          servicePlaceholder: 'Select a service...',
+          options: {
+            laravel: 'Laravel System / Back-End',
+            vue: 'Vue.js Front-End / Dashboard',
+            flutter: 'Flutter Mobile App',
+            database: 'Database Design & SQL',
+            api: 'API Integration',
+            fullstack: 'Full-Stack Project',
+            support: 'Maintenance & Support'
+          },
+          message: 'Tell Us About Your Project',
+          messagePlaceholder: 'Briefly describe what you\'re building and what you need...',
+          submit: 'Send Message ↗',
+          success: '✅ Message sent! We\'ll reply within 24 hours.',
+          opening: '✅ Opening WhatsApp...',
+          error: '❌ Please fill in all required fields.'
+        },
+        footer: {
+          copy: '© 2026 AtlasDev. Trusted Software Engineering · UAE & Syria',
+          services: 'Services',
+          process: 'Process',
+          about: 'About'
+        },
+        toggles: {
+          switchLanguageLabel: 'التحويل إلى العربية',
+          switchLanguageText: 'عربي',
+          themeLabel: 'Toggle dark mode'
+        }
+      }
+    };
+    const projectCatalog = {
+      tablemaster: {
+        name: { ar: 'TableMaster', en: 'TableMaster' },
+        type: { ar: 'تطبيق مطاعم', en: 'Restaurant App' },
+        summary: {
+          ar: 'تطبيق لإدارة المطاعم يشمل حجوزات الطاولات، توجيه الطلبات للمطبخ مباشرة، نقطة بيع، وتقارير الإيرادات اليومية.',
+          en: 'Restaurant management app with table reservations, live kitchen order routing, POS cashier, and daily revenue reports.'
+        },
+        details: {
+          ar: 'تطبيق متكامل لإدارة المطاعم مع حجوزات الطاولات، توجيه الطلبات للمطبخ مباشرة، نقطة بيع، تقارير يومية، وإدارة ورديات الموظفين.',
+          en: 'Restaurant management app with table reservations, live kitchen order routing, POS cashier, daily revenue reports, and staff shift management.'
+        },
+        images: ['lina-ahmad-ghojan/1-resturant/1.png', 'lina-ahmad-ghojan/1-resturant/All.png', 'lina-ahmad-ghojan/1-resturant/Scene.png', 'lina-ahmad-ghojan/1-resturant/isometric-mockups-3.png'],
+        tags: ['Flutter', 'Laravel', 'MySQL'],
+        alt: { ar: 'TableMaster إدارة مطاعم', en: 'TableMaster Restaurant Management' }
+      },
+      ShopNest: {
+        name: { ar: 'ShopNest', en: 'ShopNest' },
+        type: { ar: 'تجارة إلكترونية', en: 'E-Commerce' },
+        summary: {
+          ar: 'منصة تجارة إلكترونية متكاملة تشمل كتالوج منتجات، سلة شراء، دفع، ولوحة تحكم لإدارة الطلبات والمخزون.',
+          en: 'Full e-commerce platform with product catalog, cart, checkout, payment integration, and admin dashboard for order & inventory management.'
+        },
+        details: {
+          ar: 'منصة تجارة إلكترونية كاملة مع كتالوج منتجات وسلة شراء ودفع وتتبع الطلبات ولوحة تحكم إدارية قوية.',
+          en: 'Full e-commerce platform with product catalog, cart, checkout, payment gateway integration, order tracking, and a powerful admin dashboard.'
+        },
+        images: ['lina-ahmad-ghojan/2-ecommerce/1.png', 'lina-ahmad-ghojan/2-ecommerce/01.png', 'lina-ahmad-ghojan/2-ecommerce/02.png', 'lina-ahmad-ghojan/2-ecommerce/03.png', 'lina-ahmad-ghojan/2-ecommerce/04.png', 'lina-ahmad-ghojan/2-ecommerce/05.png', 'lina-ahmad-ghojan/2-ecommerce/Scene 4.png'],
+        tags: ['Laravel', 'Vue 3', 'Stripe'],
+        alt: { ar: 'ShopNest منصة تجارة إلكترونية', en: 'ShopNest E-Commerce Platform' }
+      },
+      edugame: {
+        name: { ar: 'EduGame', en: 'EduGame' },
+        type: { ar: 'تعليم تفاعلي', en: 'Gamified Learning' },
+        summary: {
+          ar: 'منصة تعلم مدمجة بالتحفيز والألعاب مع اختبارات وإنجازات ولوحات صدارة وتتبع تقدّم لرفع تفاعل الطلاب.',
+          en: 'Gamified e-learning platform with quizzes, achievements, leaderboards, and progress tracking to boost student engagement.'
+        },
+        details: {
+          ar: 'منصة تعليم تفاعلي بالتحفيز والألعاب تتضمن اختبارات وإنجازات ولوحات صدارة ولوحات واجبات ومتابعة دقيقة لتقدّم الطلاب والمعلمين.',
+          en: 'Interactive gamified e-learning platform featuring quizzes, achievements, leaderboards, assignment dashboards, and detailed progress tracking for students and teachers.'
+        },
+        images: ['lina-ahmad-ghojan/3-Gamified-Learning-Platform/1.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Dashboard.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Assignment Dashboard.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Class.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Login Page.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Discussion page.png', 'lina-ahmad-ghojan/3-Gamified-Learning-Platform/Quick Learn Dashboard.png'],
+        tags: ['Vue 3', 'Laravel', 'MySQL'],
+        alt: { ar: 'EduGame منصة تعليم تفاعلي', en: 'EduGame Gamified Learning' }
+      },
+      pharmacy: {
+        name: { ar: 'صيدليتي', en: 'PharmaCare' },
+        type: { ar: 'إدارة صيدلية', en: 'Pharmacy Management' },
+        summary: {
+          ar: 'نظام إدارة صيدلي متكامل لإدارة المخزون والمبيعات والعملاء والوصفات الطبية والتقارير المالية.',
+          en: 'Comprehensive pharmacy management system with inventory tracking, sales processing, customer management, prescription handling, and financial reporting.'
+        },
+        details: {
+          ar: 'نظام إدارة صيدليات احترافي يشمل إدارة مخزون الأدوية والمبيعات ومتابعة الوصفات الطبية وتتبع العملاء والتقارير المالية والأرصدة.',
+          en: 'Professional pharmacy management platform featuring medicine inventory management, sales processing, prescription tracking, customer management, financial reports, and account balancing.'
+        },
+        images: ['lina-ahmad-ghojan/7-Pharmacy/1.png', 'lina-ahmad-ghojan/7-Pharmacy/Home.png', 'lina-ahmad-ghojan/7-Pharmacy/Product Page.png', 'lina-ahmad-ghojan/7-Pharmacy/Card details 1.png', 'lina-ahmad-ghojan/7-Pharmacy/Checkout 1.png', 'lina-ahmad-ghojan/7-Pharmacy/items1.png'],
+        tags: ['Laravel', 'Vue 3', 'PostgreSQL'],
+        alt: { ar: 'صيدليتي نظام إدارة صيدلي', en: 'PharmaCare Pharmacy Management' }
+      },
+      rentflow: {
+        name: { ar: 'RentFlow', en: 'RentFlow' },
+        type: { ar: 'إدارة إيجارات', en: 'Rental Management' },
+        summary: {
+          ar: 'نظام لإدارة العقارات والإيجارات مع متابعة المستأجرين والعقود والتحصيل والصيانة والتقارير المالية.',
+          en: 'Property rental management system with tenant tracking, lease contracts, payment collection, maintenance requests, and financial reporting.'
+        },
+        details: {
+          ar: 'نظام متكامل لإدارة الإيجارات والعقارات مع تتبع المستأجرين والعقود والتحصيل وطلبات الصيانة والتقارير المالية.',
+          en: 'Complete property rental management system with tenant tracking, lease contracts, payment collection, maintenance request portal, and financial reporting.'
+        },
+        images: ['lina-ahmad-ghojan/5-Rent-Management/1.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 1.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 4.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 5.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 7.png', 'lina-ahmad-ghojan/5-Rent-Management/Scene 8.png'],
+        tags: ['Laravel', 'Vue 3', 'PostgreSQL'],
+        alt: { ar: 'RentFlow إدارة إيجارات', en: 'RentFlow Rental Management' }
+      },
+      transithub: {
+        name: { ar: 'TransitHub', en: 'TransitHub' },
+        type: { ar: 'نقل ذكي', en: 'Smart Transport' },
+        summary: {
+          ar: 'منصة نقل ذكي لإدارة الأساطيل والمسارات وتتبع السائقين ومراقبة الوقود وجدولة الصيانة.',
+          en: 'Smart transport platform for fleet management, route optimization, live driver tracking, fuel monitoring, and maintenance scheduling.'
+        },
+        details: {
+          ar: 'منصة نقل ذكي وإدارة أساطيل مع تتبع مباشر للسائقين وتحسين المسارات ومراقبة الوقود وجدولة الصيانة وتحليلات الرحلات.',
+          en: 'Smart transport and fleet management platform with live driver tracking, route optimization, fuel monitoring, maintenance scheduling, and trip analytics.'
+        },
+        images: ['lina-ahmad-ghojan/6-smart%20transport%20platform/1.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/01.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/02.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/03.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/04.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/05.png', 'lina-ahmad-ghojan/6-smart%20transport%20platform/Scene 1.png'],
+        tags: ['Laravel', 'Vue 3', 'Flutter'],
+        alt: { ar: 'TransitHub منصة نقل ذكي', en: 'TransitHub Smart Transport' }
+      },
+      educare: {
+        name: { ar: 'EduCare', en: 'EduCare' },
+        type: { ar: 'إدارة تعليم', en: 'Education' },
+        summary: {
+          ar: 'نظام إدارة مدارس يشمل سجلات الطلاب والحضور والدرجات والتواصل مع أولياء الأمور والتقارير الأكاديمية.',
+          en: 'School management system with student records, attendance, grade management, parent communication portal, and academic reporting.'
+        },
+        details: {
+          ar: 'نظام شامل لإدارة المدارس مع سجلات الطلاب والحضور والدرجات والرسوم والواجبات والفعاليات والتواصل مع أولياء الأمور.',
+          en: 'Comprehensive school management system with student records, attendance tracking, grade management, billing, homework, events, and parent communication portal.'
+        },
+        images: ['lina-ahmad-ghojan/8-school/1.png', 'lina-ahmad-ghojan/8-school/Login.png', 'lina-ahmad-ghojan/8-school/Sessions.png', 'lina-ahmad-ghojan/8-school/Teacher.png', 'lina-ahmad-ghojan/8-school/Home Work.png', 'lina-ahmad-ghojan/8-school/Events.png', 'lina-ahmad-ghojan/8-school/Finance_fees head.png', 'lina-ahmad-ghojan/8-school/noticeboard.png'],
+        tags: ['Laravel', 'Vue 3', 'MySQL'],
+        alt: { ar: 'EduCare إدارة مدارس', en: 'EduCare School Management' }
+      },
+      medstock: {
+        name: { ar: 'MedStock', en: 'MedStock' },
+        type: { ar: 'صيدلية', en: 'Pharmacy App' },
+        summary: {
+          ar: 'تطبيق لإدارة الصيدليات يشمل كتالوج الأدوية وتتبع الوصفات والتنبيهات المخزنية وسجل المبيعات والموردين.',
+          en: 'Pharmacy management app with medication catalog, prescription tracking, stock alerts, sales history, and supplier management.'
+        },
+        details: {
+          ar: 'تطبيق Flutter لإدارة الصيدليات يتضمن كتالوج الأدوية وتتبع الوصفات وتنبيهات انخفاض المخزون وسجل المبيعات وإدارة الموردين.',
+          en: 'Pharmacy management mobile app built with Flutter featuring medication catalog, prescription tracking, low-stock alerts, sales history, and supplier management.'
+        },
+        images: ['lina-ahmad-ghojan/7-Pharmacy/1.png', 'lina-ahmad-ghojan/7-Pharmacy/Home.png', 'lina-ahmad-ghojan/7-Pharmacy/Product Page.png', 'lina-ahmad-ghojan/7-Pharmacy/Checkout.png', 'lina-ahmad-ghojan/7-Pharmacy/Card details 1.png', 'lina-ahmad-ghojan/7-Pharmacy/splash-1.png', 'lina-ahmad-ghojan/7-Pharmacy/splash-2.png'],
+        tags: ['Flutter', 'Laravel', 'MySQL'],
+        alt: { ar: 'MedStock إدارة صيدلية', en: 'MedStock Pharmacy Management' }
+      },
+      wareflow: {
+        name: { ar: 'WareFlow', en: 'WareFlow' },
+        type: { ar: 'مخزون ومستودعات', en: 'Inventory Management' },
+        summary: {
+          ar: 'نظام متكامل لإدارة المخزون والمستودعات مع تتبع الأصول وتقارير GRN وتخصيص المواد ومسح الباركود.',
+          en: 'Full inventory and warehouse management system with asset tracking, GRN reports, project-based item allocation, and barcode scanning.'
+        },
+        details: {
+          ar: 'نظام متكامل لإدارة المخزون والمستودعات مع تتبع الأصول والأدوات وتقارير GRN وتخصيص المواد حسب المشروع ومرشحات متقدمة ودعم الباركود.',
+          en: 'Full inventory and warehouse management system with asset tracking, tools management, GRN reporting, project-based item allocation, filters, and barcode scanning support.'
+        },
+        images: ['lina-ahmad-ghojan/9-Inventory-Management-System-/05 Dashboard.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/1.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/Assets.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/All Items.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/GRN Report.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/Project.png', 'lina-ahmad-ghojan/9-Inventory-Management-System-/Request.png'],
+        tags: ['Laravel', 'Vue 3', 'PostgreSQL'],
+        alt: { ar: 'WareFlow إدارة مخزون ومستودعات', en: 'WareFlow Inventory Management' }
+      },
+      staffhub: {
+        name: { ar: 'StaffHub', en: 'StaffHub' },
+        type: { ar: 'موارد بشرية', en: 'HR Dashboard' },
+        summary: {
+          ar: 'لوحة موارد بشرية لإدارة الحضور والرواتب والإجازات وتحليلات الأقسام.',
+          en: 'HR management dashboard with employee attendance tracking, payroll processing, leave management, and department analytics.'
+        },
+        details: {
+          ar: 'لوحة موارد بشرية لإدارة حضور الموظفين والرواتب والرسائل وتحليلات الأقسام للشركات النامية.',
+          en: 'HR management dashboard featuring employee attendance tracking, payroll processing, messaging, and department analytics built for growing teams.'
+        },
+        images: ['lina-ahmad-ghojan/10-HR Management Dashboard (Community)/payroll.png', 'lina-ahmad-ghojan/10-HR Management Dashboard (Community)/employee attendance.png', 'lina-ahmad-ghojan/10-HR Management Dashboard (Community)/message.png', 'lina-ahmad-ghojan/10-HR Management Dashboard (Community)/message-1.png'],
+        tags: ['Laravel', 'Vue 3', 'MySQL'],
+        alt: { ar: 'StaffHub لوحة موارد بشرية', en: 'StaffHub HR Dashboard' }
+      },
+      bahasaku: {
+        name: { ar: 'BahasaKu', en: 'BahasaKu' },
+        type: { ar: 'تعليم لغات', en: 'Language Learning' },
+        summary: {
+          ar: 'منصة تعليم لغات محلية تفاعلية مع دروس منظمة واختبارات وتتبع تقدّم الدارسين بسهولة.',
+          en: 'Interactive local language learning platform with organized lessons, quizzes, and easy learner progress tracking.'
+        },
+        details: {
+          ar: 'منصة تعليم لغات محلية متطورة توفر دروساً منظمة واختبارات تفاعلية وتتبع دقيق لتقدم الدارسين مع واجهة سهلة الاستخدام.',
+          en: 'Advanced local language learning platform offering organized lessons, interactive quizzes, detailed learner progress tracking, and an intuitive user interface for language mastery.'
+        },
+        images: ['lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/1.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/iPhone.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 1.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 4.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 5.png', 'lina-ahmad-ghojan/4-[Free] BahasaKu E-learning local language ui kit (Community)/Scene 7.png'],
+        tags: ['Flutter', 'Laravel', 'MySQL'],
+        alt: { ar: 'BahasaKu تعليم لغات محلية', en: 'BahasaKu Language Learning' }
+      }
+    };
+    function buildLocalizedPageUrl(lang) {
+      const next = new URL(`${SITE_URL}/default.html`);
+      if (lang === 'en') next.searchParams.set('lang', 'en');
+      return next.toString();
+    }
+
+    function syncLanguageUrl(lang) {
+      const next = new URL(window.location.href);
+      if (lang === 'en') {
+        next.searchParams.set('lang', 'en');
+      } else {
+        next.searchParams.delete('lang');
+      }
+      window.history.replaceState({}, '', `${next.pathname}${next.search}${next.hash}`);
+    }
+
+    function buildWebsiteSchema(lang) {
+      const locale = translations[lang];
+      const pageUrl = buildLocalizedPageUrl(lang);
+      const inLanguage = lang === 'ar' ? 'ar' : 'en';
+
+      return {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            '@id': `${SITE_URL}/#organization`,
+            name: 'AtlasDev',
+            url: `${SITE_URL}/default.html`,
+            logo: `${SITE_URL}/logo/logo4.png`,
+            email: 'info@atlasdev.tech',
+            telephone: '+971524859625',
+            areaServed: ['AE', 'SY', 'SA', 'QA', 'KW'],
+            availableLanguage: ['ar', 'en'],
+            sameAs: [
+              'https://wa.me/971524859625'
+            ]
+          },
+          {
+            '@type': 'WebSite',
+            '@id': `${SITE_URL}/#website`,
+            url: `${SITE_URL}/default.html`,
+            name: 'AtlasDev',
+            inLanguage,
+            publisher: { '@id': `${SITE_URL}/#organization` }
+          },
+          {
+            '@type': 'WebPage',
+            '@id': `${pageUrl}#webpage`,
+            url: pageUrl,
+            name: locale.meta.title,
+            description: locale.meta.description,
+            inLanguage,
+            isPartOf: { '@id': `${SITE_URL}/#website` },
+            about: { '@id': `${SITE_URL}/#organization` }
+          },
+          {
+            '@type': 'ItemList',
+            '@id': `${pageUrl}#projects`,
+            name: lang === 'ar' ? 'مشاريع AtlasDev' : 'AtlasDev projects',
+            itemListElement: Object.entries(projectCatalog).map(([key, project], index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              url: `${SITE_URL}/project-details.html?project=${encodeURIComponent(key)}${lang === 'en' ? '&lang=en' : ''}`,
+              name: project.name[lang],
+              description: project.summary[lang]
+            }))
+          }
+        ]
+      };
+    }
+
+    function updateSeoMeta(lang) {
+      const locale = translations[lang];
+      const pageUrl = buildLocalizedPageUrl(lang);
+      const ogLocale = lang === 'ar' ? 'ar_AE' : 'en_US';
+
+      document.title = locale.meta.title;
+      metaDescription.setAttribute('content', locale.meta.description);
+      canonicalLink.setAttribute('href', pageUrl);
+      alternateAr.setAttribute('href', buildLocalizedPageUrl('ar'));
+      alternateEn.setAttribute('href', buildLocalizedPageUrl('en'));
+      alternateDefault.setAttribute('href', buildLocalizedPageUrl('ar'));
+      metaOgTitle.setAttribute('content', locale.meta.title);
+      metaOgDescription.setAttribute('content', locale.meta.description);
+      metaOgUrl.setAttribute('content', pageUrl);
+      metaOgLocale.setAttribute('content', ogLocale);
+      metaTwitterTitle.setAttribute('content', locale.meta.title);
+      metaTwitterDescription.setAttribute('content', locale.meta.description);
+      schemaNode.textContent = JSON.stringify(buildWebsiteSchema(lang));
+      syncLanguageUrl(lang);
+    }
+
+    const savedLang = searchParams.get('lang') || localStorage.getItem('atlas-lang') || 'ar';
+    let currentLang = savedLang;
+
+    function updateThemeButtons() {
+      const themeIcon = html.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+      [toggleBtn, mobileThemeToggle].forEach(btn => {
+        if (!btn) return;
+        btn.textContent = themeIcon;
+        btn.setAttribute('aria-label', translations[currentLang].toggles.themeLabel);
+        btn.setAttribute('title', translations[currentLang].toggles.themeLabel);
+      });
+    }
+
+    function setTheme() {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      const next = isDark ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('atlas-theme', next);
+      updateThemeButtons();
+    }
+
+    [toggleBtn, mobileThemeToggle].forEach(btn => {
+      if (btn) btn.addEventListener('click', setTheme);
+    });
+
+    function buildWhatsAppLink(message) {
+      return `https://wa.me/971524859625?text=${encodeURIComponent(message)}`;
+    }
+
+    function buildGenericWhatsAppMessage(lang, type) {
+      if (type === 'contact') {
+        return lang === 'ar'
+          ? 'مرحباً AtlasDev، أريد التواصل معكم بخصوص مشروع.'
+          : 'Hello AtlasDev, I would like to contact you about a project.';
+      }
+
+      return lang === 'ar'
+        ? 'مرحباً AtlasDev، أريد بدء مشروع جديد. الرجاء التواصل معي.'
+        : 'Hello AtlasDev, I\'d like to start a project. Please contact me.';
+    }
+
+    function buildRegionalWhatsAppLink(number, region, lang) {
+      const message = lang === 'ar'
+        ? `مرحباً AtlasDev، أريد التواصل معكم من ${region === 'uae' ? 'الإمارات' : 'سوريا'}.`
+        : `Hello AtlasDev, I would like to contact you from ${region === 'uae' ? 'the UAE' : 'Syria'}.`;
+      return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+    }
+
+    function buildProjectDiscussMessage(project, lang) {
+      return lang === 'ar'
+        ? `مرحباً AtlasDev، أنا مهتم بمشروع مشابه لـ ${project.name.ar} (${project.type.ar}). هل يمكننا التحدث؟`
+        : `Hi AtlasDev, I'm interested in a similar project to ${project.name.en} (${project.type.en}). Can we discuss?`;
+    }
+
+    function getProjectDetailsUrl(projectKey, lang) {
+      return `project-details.html?project=${encodeURIComponent(projectKey)}&lang=${encodeURIComponent(lang)}`;
+    }
+
+    function buildProjectLightboxMessage(project, lang) {
+      return lang === 'ar'
+        ? `مرحباً AtlasDev، أنا مهتم بمشروع ${project.name.ar}.`
+        : `Hi AtlasDev, I'm interested in ${project.name.en}.`;
+    }
+
+    function getNestedValue(obj, path) {
+      return path.split('.').reduce((acc, key) => acc && acc[key], obj);
+    }
+
+    function updateLanguageButtons() {
+      const nextLabel = translations[currentLang].toggles.switchLanguageText;
+      const nextTitle = translations[currentLang].toggles.switchLanguageLabel;
+      [langToggle, mobileLangToggle].forEach(btn => {
+        if (!btn) return;
+        btn.textContent = nextLabel;
+        btn.setAttribute('aria-label', nextTitle);
+        btn.setAttribute('title', nextTitle);
+      });
+    }
+
+    function updateProjectCards(lang) {
+      document.querySelectorAll('.project-card[data-project]').forEach(card => {
+        const key = card.dataset.project;
+        const project = projectCatalog[key];
+        if (!project) return;
+
+        const title = card.querySelector('.proj-title');
+        const type = card.querySelector('.proj-type');
+        const summary = card.querySelector('.proj-summary');
+        const discuss = card.querySelector('.project-discuss');
+        const detailsBtn = card.querySelector('.btn-gallery');
+        const image = card.querySelector('.project-image');
+
+        if (title) title.textContent = project.name[lang];
+        if (type) type.textContent = project.type[lang];
+        if (summary) summary.textContent = project.summary[lang];
+        if (discuss) discuss.href = buildWhatsAppLink(buildProjectDiscussMessage(project, lang));
+        if (discuss) {
+          discuss.innerHTML = `<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.03 5.3c-5.9 0-10.68 4.72-10.68 10.55 0 1.86.49 3.67 1.42 5.28L5.3 26.7l5.74-1.5a10.77 10.77 0 0 0 4.98 1.22h.01c5.89 0 10.67-4.73 10.67-10.56 0-2.82-1.1-5.46-3.12-7.45a10.75 10.75 0 0 0-7.55-3.1zm0 19.33h-.01a8.9 8.9 0 0 1-4.53-1.24l-.33-.19-3.4.89.91-3.31-.21-.34a8.73 8.73 0 0 1-1.35-4.6c0-4.83 3.98-8.77 8.91-8.77 2.38 0 4.61.92 6.29 2.58a8.67 8.67 0 0 1 2.61 6.18c0 4.83-3.99 8.8-8.89 8.8zm4.88-6.61c-.27-.13-1.61-.79-1.86-.88-.25-.09-.43-.13-.61.13-.18.26-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.13-1.13-.41-2.16-1.31-.8-.7-1.34-1.56-1.5-1.82-.16-.26-.02-.4.12-.53.12-.12.27-.31.4-.46.13-.15.18-.26.27-.44.09-.18.04-.33-.02-.46-.07-.13-.61-1.46-.84-2-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.95 2.56 1.09 2.74.13.18 1.86 2.97 4.52 4.16.63.27 1.12.43 1.51.55.63.2 1.2.17 1.65.1.5-.08 1.61-.66 1.84-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.31z"></path></svg><span data-i18n="projects.actions.discuss">${translations[lang].projects.actions.discuss}</span>`;
+        }
+        if (detailsBtn) {
+          detailsBtn.innerHTML = `<span data-i18n="projects.actions.details">${translations[lang].projects.actions.details}</span>`;
+          detailsBtn.onclick = () => {
+            window.location.href = getProjectDetailsUrl(key, currentLang);
+          };
+        }
+        if (image) image.alt = project.alt[lang];
+      });
+    }
+
+    function applyLanguage(lang) {
+      currentLang = lang;
+      const locale = translations[lang];
+      html.setAttribute('lang', lang);
+      html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+      updateSeoMeta(lang);
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const value = getNestedValue(locale, el.dataset.i18n);
+        if (typeof value === 'string') el.textContent = value;
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const value = getNestedValue(locale, el.dataset.i18nHtml);
+        if (typeof value === 'string') el.innerHTML = value;
+      });
+
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const value = getNestedValue(locale, el.dataset.i18nPlaceholder);
+        if (typeof value === 'string') el.setAttribute('placeholder', value);
+      });
+
+      updateProjectCards(lang);
+      document.getElementById('navWhatsapp').href = buildWhatsAppLink(buildGenericWhatsAppMessage(lang, 'contact'));
+      document.getElementById('mobileWhatsapp').href = buildWhatsAppLink(buildGenericWhatsAppMessage(lang, 'contact'));
+      document.getElementById('heroWhatsapp').href = buildWhatsAppLink(buildGenericWhatsAppMessage(lang, 'start'));
+      document.getElementById('uaeWhatsapp').href = buildRegionalWhatsAppLink('971524859625', 'uae', lang);
+      document.getElementById('syriaWhatsapp').href = buildRegionalWhatsAppLink('963995019487', 'syria', lang);
+      updateLanguageButtons();
+      updateThemeButtons();
+      localStorage.setItem('atlas-lang', lang);
+    }
+
+    [langToggle, mobileLangToggle].forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', () => {
+          applyLanguage(currentLang === 'ar' ? 'en' : 'ar');
+        });
+      }
+    });
+
+    applyLanguage(savedLang);
+
+    function toggleMenu() {
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('open');
+    }
+
+    // Smooth scroll + close menu on nav click
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Open WhatsApp with form data
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const msg = document.getElementById('form-msg');
+
+      if (!name || !email || !message) {
+        msg.textContent = translations[currentLang].form.error;
+        msg.style.color = '#f87171';
+        msg.style.display = 'block';
+        setTimeout(() => { msg.style.display = 'none'; }, 3000);
+        return;
+      }
+
+      const text = currentLang === 'ar'
+        ? `مرحباً AtlasDev،\n\nالاسم: ${name}\nالبريد الإلكتروني: ${email}\n${service ? `الخدمة: ${service}\n` : ''}تفاصيل المشروع: ${message}`
+        : `Hello AtlasDev,\n\nName: ${name}\nEmail: ${email}\n${service ? `Service: ${service}\n` : ''}Message: ${message}`;
+      const whatsappUrl = `https://wa.me/971524859625?text=${encodeURIComponent(text)}`;
+
+      window.open(whatsappUrl, '_blank', 'noopener');
+
+      msg.textContent = translations[currentLang].form.opening;
+      msg.style.color = 'var(--accent-dark)';
+      msg.style.display = 'block';
+      document.getElementById('contact-form').reset();
+      setTimeout(() => { msg.style.display = 'none'; }, 3000);
+    }
+
+    // Intersection observer – fade in cards
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.service-card, .step, .about-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+      observer.observe(el);
+    });
+
+    // ─── Project Lightbox ───────────────────────────────────
+    function openProjectLightbox(projectKey) {
+      window.location.href = getProjectDetailsUrl(projectKey, currentLang);
+    }
+
+    function closeLightbox() {
+      document.getElementById('projectLightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeLightboxOnBg(e) {
+      if (e.target === document.getElementById('projectLightbox')) closeLightbox();
+    }
+
+    function openImgFull(src) {
+      document.getElementById('imgFullSrc').src = src;
+      document.getElementById('imgFullOverlay').classList.add('open');
+    }
+
+    function closeImgFull() {
+      document.getElementById('imgFullOverlay').classList.remove('open');
+      document.getElementById('imgFullSrc').src = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { closeImgFull(); closeLightbox(); }
+    });
+  </script>
+</body>
+
+</html>
